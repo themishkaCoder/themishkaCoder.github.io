@@ -1,0 +1,242 @@
+.macbookair{
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.rl{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 300px;
+}
+
+header{
+    width: auto;
+    height: 520px;
+    background-color: #272727;
+    padding: 20px
+}
+.headP1{
+    color: white;
+    font-family: "Verdana", bold;
+    font-size: 24px;
+}
+
+.headP2{
+    color: white;
+    font-family: "Verdana", bold;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.content{
+    width: 600px;
+    height: auto;
+    margin: auto;
+}
+
+.left{
+    /*display: flex;
+    justify-content: flex-start;*/
+    color: white;
+    font-family: "Verdana", bold;
+    font-size: 24px;
+}
+
+.right{
+    /*display: flex;
+    justify-content: flex-end;*/
+    color: white;
+    font-family: "Verdana", bold;
+    font-size: 12px;
+    text-decoration: underline;
+    padding-top: 15px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    font-family: cursive;
+    color: white;
+    font-size: 28px;
+}
+
+.centP2{
+    
+    font-family: "Verdana";
+    color: white;
+    font-size: 36px;
+}
+
+article{
+    /*display: flex;
+    justify-content: center;
+    flex-wrap: wrap;*/
+    padding: 20px;
+    width: 700px;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    /*box-shadow: 0 0 25px 1px;*/
+}
+
+.dicribtion{
+    margin: auto;
+    text-align: center;
+    color: darkgray;
+    font-size: 18px;
+}
+
+.website{
+    background-color: #34a56d;
+    margin: auto;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.website p{
+    color: white;
+    font-size: 13px;
+    font-family: "Verdana";
+}
+
+.btm {
+    margin: auto;
+    text-align: center;
+}
+
+.plusu{
+    /*display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;*/
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+
+.main{
+    font-size: 14px;
+    font-family: "Verdana";
+    font-weight: bold;
+}
+
+.submain{
+    color: darkgray;
+    font-size: 18px;
+    font-size: 12px;
+}
+
+.text{
+    width: 300px;
+    padding: 10px;
+}
+
+.img{
+    
+}
+
+.greenline{
+    width: auto;
+    height: 200px;
+    background-color: #34a56d;
+}
+
+.centere{
+    width: 700px;
+    height: 200px;
+    background-color: #34a56d;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 200px;
+    
+}
+
+.thirtypix{
+    font-size: 30px;
+    font-family: "Verdana";
+    color: white;
+    /*padding-top: 80px;*/
+    
+}
+
+.pp{
+    color: white;
+    font-family: "Verdana";
+    font-size: 16px;
+}
+
+.bt2{
+    background-color: white;
+    color: #34a56d;
+    font-family: "Verdana";
+    font-size: 13px;
+    border-radius: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.button{
+    padding-top: 100px;
+    
+    
+}
+
+.slider{
+    width: 700px;
+    text-align: center;
+    margin: auto;
+    height: 300px;
+    padding-top: 100px;
+}
+
+.bold{
+    font-size: 24px;
+    font-family: "Verdana";
+    font-weight: bold;
+}
+
+footer{
+    width: auto;
+    height: 200px;
+    background-color: #f1f1f1;
+}
+
+.center2{
+    width: 700px;
+    height: 200px;
+    margin: auto;
+    background-color: #f1f1f1;
+    /*display: flex;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 150px;
+    
+}
+
+.text3{
+    width: 400px;
+}
+
+.dicribtion2{
+    color: darkgray;
+    font-size: 18px;
+    padding-top: 25px;
+}
+
+.social{
+    padding-top: 50px;
+    
+}
+
+.social img{
+    width: 20px;
+    height: 20px;
+}
