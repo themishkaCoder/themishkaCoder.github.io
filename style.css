@@ -1,13 +1,16 @@
-.macbookair{
+.header-img{
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 .rl{
-    display: grid;
+    /*display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 300px;
+    grid-column-gap: 300px;*/
+    display: flex;
+    flex-wrap: wrap;
+    order: 5;
 }
 
 header{
@@ -35,7 +38,7 @@ header{
     margin: auto;
 }
 
-.left{
+.left-header-title{
     /*display: flex;
     justify-content: flex-start;*/
     color: white;
@@ -43,17 +46,19 @@ header{
     font-size: 24px;
 }
 
-.right{
-    /*display: flex;
-    justify-content: flex-end;*/
+.right-header-title{
+    display: flex;
+    justify-content: flex-end;
     color: white;
     font-family: "Verdana", bold;
     font-size: 12px;
     text-decoration: underline;
     padding-top: 15px;
+    padding-left: 300px;
+    
 }
 
-.center{
+.center-content{
     display: flex;
     justify-content: center;
     font-family: cursive;
@@ -80,7 +85,7 @@ article{
     /*box-shadow: 0 0 25px 1px;*/
 }
 
-.dicribtion{
+.description{
     margin: auto;
     text-align: center;
     color: darkgray;
@@ -225,7 +230,7 @@ footer{
     width: 400px;
 }
 
-.dicribtion2{
+.second-description{
     color: darkgray;
     font-size: 18px;
     padding-top: 25px;
