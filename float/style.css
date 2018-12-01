@@ -111,9 +111,14 @@ article{
 }
 
 .recent-work-paragraf{
-    font-family: "Verdana";
+    font-family: "RUSWill Robinson";
     font-size: 16px;
     color: #acacac;
+}
+
+@font-face {
+    font-family: "RUSWill Robinson";
+    src: url("fonts/Robisson.ttf")
 }
 
 
@@ -202,4 +207,8 @@ footer{
 .social img{
     width: 24px;
     height: 24px;
+}
+
+.column-paragraf{
+    font-family: 'Text Me One', sans-serif;
 }
