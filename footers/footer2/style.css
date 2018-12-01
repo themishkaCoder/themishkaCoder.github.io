@@ -1,0 +1,21 @@
+header{
+    background-color: red;
+    margin: auto;
+    width: 800px;
+}
+
+article{
+    background-color: darkcyan;
+    margin: auto;
+    width: 800px;
+    min-height: calc(100vh - 70px);
+}
+
+footer{
+    background-color: burlywood;
+    width: 800px;
+    margin: auto;
+    height: 50px;
+    
+}
+
