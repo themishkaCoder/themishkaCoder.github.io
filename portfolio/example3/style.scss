@@ -1,0 +1,75 @@
+$width: 1070px;
+$firstcolor: #ff3f40;
+$secondcolor: #313030;
+$thirdcolor: #f6f2f2;
+$standartFont: 'Open Sans', sans-serif;
+
+@mixin standartP($size) {
+    font-family: $standartFont;
+    font-size: $size;
+}
+
+@mixin buttons($background, $color) {
+    font-size: 19px;
+    font-family: $standartFont;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: $background;
+    border: 1px solid $firstcolor;
+    border-radius: 4px; 
+    color: $color;
+}
+
+header{
+    background-color: $thirdcolor;
+    padding: 20px;
+}
+
+.wrapper{
+    width: $width;
+    margin: 0 auto;
+    .menu{
+        background-color: $secondcolor;
+        text-align: center;
+        height: 88px;
+        .menu-button{
+            height: 100%;
+            background-color: $secondcolor;
+            border: none;
+            color: white;
+            @include standartP(18px)
+        }
+        .menu-button:hover{
+            background-color: $firstcolor;
+            transition-duration: 0.5s;
+        }
+    }   
+}
+
+.header-content{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 520px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 95px;
+    .header-text{
+        justify-content: flex-end;
+        h1{
+            @include standartP(55px);
+        }
+        p{
+            @include standartP(16px)
+        }
+
+        button{
+            @include buttons($firstcolor, white);
+        }
+        
+    }
+    .video{
+        
+    }
+}
