@@ -15,6 +15,17 @@
     left: 30px;
 }
 
+.eye1::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+
 .eye2{
     width: 50px;
     height: 50px;
@@ -24,7 +35,17 @@
     right: 30px;
 }
 
-.dot1{
+.eye2::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/*.dot1{
     width: 10px;
     height: 10px;
     background-color: black;
@@ -41,7 +62,7 @@
     top: 10px;
     right: 10px;
 }
-
+*/
 .mouth{
     width: 80px;
     height: 5px;
@@ -58,3 +79,9 @@
     position: absolute;
     left: 20px
 }
+
+.test:hover {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
