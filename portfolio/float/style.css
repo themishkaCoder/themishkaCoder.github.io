@@ -92,6 +92,7 @@ article{
     background-color: #ececec;
     margin-top: 300px;
     padding: 20px;
+    
 }
 
 .recent-work-content{
@@ -123,13 +124,14 @@ article{
 
 
 .column-one{
-    width: 180px;
+    width: auto;
     float: left;
+    
 }
 
 .column-two{
-    width: 180px;
-    float: right;
+    width: auto;
+    
 }
 
 .column-three{
@@ -137,16 +139,22 @@ article{
     
 }
 
+.columns{
+    
+}
+
 .column-one img{
     width: 180px;
     height: 120px;
     overflow: hidden;
+    display: inline-block;
 }
 
 .column-two img{
     width: 180px;
     height: 120px;
     overflow: hidden;
+    display: inline-block;
 }
 
 .column-three img{

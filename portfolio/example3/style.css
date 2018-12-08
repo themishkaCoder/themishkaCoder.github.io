@@ -1,0 +1,52 @@
+header {
+  background-color: #f6f2f2;
+  padding: 20px; }
+
+.wrapper {
+  width: 1070px;
+  margin: 0 auto; }
+  .wrapper .menu {
+    background-color: #313030;
+    text-align: center;
+    height: 88px; }
+    .wrapper .menu .menu-button {
+      height: 100%;
+      background-color: #313030;
+      border: none;
+      color: white;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px; }
+    .wrapper .menu .menu-button:hover {
+      background-color: #ff3f40;
+      -webkit-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s; }
+
+.header-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 520px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 95px; }
+  .header-content .header-text {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    .header-content .header-text h1 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 55px; }
+    .header-content .header-text p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px; }
+    .header-content .header-text button {
+      font-size: 19px;
+      font-family: "Open Sans", sans-serif;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      background-color: #ff3f40;
+      border: 1px solid #ff3f40;
+      border-radius: 4px;
+      color: white; }
