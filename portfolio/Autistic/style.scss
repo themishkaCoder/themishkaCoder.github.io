@@ -1,0 +1,43 @@
+$width: 1170px;
+
+@mixin standartFont($color, $size) {
+    font-family: "Verdana";
+    color: $color;
+    size: $size;
+}
+@mixin clearfix() {
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }
+header{
+    background: url(images/background.png);
+}
+.wrapper{
+    width: $width;
+    
+    margin: auto;
+    .menu{
+        background-color: #3c4b7a;
+        @include clearfix();
+        h1{
+            @include standartFont(white, 24px);
+            float: left;
+        }
+    
+        button{
+            margin-top: 30px;
+            // background-color: #3c4a7a;
+            
+            float: right;
+        }
+    }
+    .header-content{
+        text-align: center;
+        padding-top: 220px;
+        @include standartFont(white, 20px);
+        
+    }
+}
