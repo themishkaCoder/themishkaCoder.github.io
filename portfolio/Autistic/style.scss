@@ -46,7 +46,7 @@ $article-button-color: #6f72f7;
 header{
     background-image: url(images/background.png);
     @media screen and (max-width: 480px){
-        width: 100%;
+        width: $width / 480px * 100%;
     }
 }
 .wrapper{
@@ -92,6 +92,11 @@ header{
         }
         
     }
+    @media screen and (max-width: 480px){
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 article{
@@ -102,6 +107,9 @@ article{
     .article-content{
         width: $width;
         margin: 0 auto;
+        @media screen and (max-width: 480px) {
+            width: 100%;
+        }
     }
     form{
         padding-bottom: 120px;
@@ -112,6 +120,13 @@ article{
         }
         button{
             @include article-button(30px);
+        }
+        @media screen and (max-width: 480px) {
+            width: 100%;
+            input{
+                width: 50%;
+                margin: 10px;
+            }
         }
     }
 
@@ -132,6 +147,17 @@ article{
             float: left;
             padding: 10px;
         }
+        @media screen and (max-width: 480px){
+            width: 100%;
+            .small-img, .big-img{
+                float: none;
+                // width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 480px){
+        width: $width / 480px * 100%;
+        
     }
 }
 
@@ -152,7 +178,9 @@ article{
         margin-top: 100px;
         margin-bottom: 100px;
     }
-
+    @media screen and (max-width: 480px) {
+        width: $width / 480px * 100%;
+    }
 }
 .adverts{
     padding-top: 210px;
@@ -170,7 +198,9 @@ article{
         }
         @media screen and (max-width: 480px){
             float: none;
-            width: 100%;
+            // width: 100%;
+            // margin: 0 auto;
+            // text-align: center;
         }  
     }
     .advert-p{
@@ -186,6 +216,10 @@ article{
             @include standartFont(red, 24px);
 
         }
+    }
+    @media screen and (max-width: 480px){
+        width: $width / 480px * 100%;
+        
     }
 }
 
@@ -221,6 +255,10 @@ article{
                 width: 100%;
             }
         }
+    }
+    @media screen and (max-width: 480px) {
+        width: $width / 480px * 100%;
+        
     }
 }
 .second-galereya-main-p{
@@ -329,7 +367,10 @@ article{
             background-position: 57px 0;
             display: inline-block;
         }
-    } 
+    }
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
 }
 
 .end{
@@ -347,16 +388,14 @@ article{
             float: right;
             @include standartFont(gray, 14px);
         }
-    }
-}
-
-@media screen and (max-width: 480px){
-    // $width: 100%;
-    .advert{
-        float: none;
         
     }
-    .menu{
+    @media screen and (max-width: 480px) {
         width: 100%;
+    }
+}
+footer{
+    @media screen and (max-width: 480px) {
+        width: $width / 480px * 100%;
     }
 }

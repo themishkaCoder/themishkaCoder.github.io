@@ -4,7 +4,7 @@ header {
 
 @media screen and (max-width: 480px) {
   header {
-    width: 100%;
+    width: 243.75%;
   }
 }
 
@@ -67,6 +67,14 @@ header {
   padding: 15px;
 }
 
+@media screen and (max-width: 480px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
 article {
   background-color: #f4f4f4;
   padding: 20px;
@@ -76,6 +84,12 @@ article {
 article .article-content {
   width: 1170px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  article .article-content {
+    width: 100%;
+  }
 }
 
 article form {
@@ -99,6 +113,16 @@ article form button {
   padding-right: 30px;
   padding-left: 30px;
   border-radius: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  article form {
+    width: 100%;
+  }
+  article form input {
+    width: 50%;
+    margin: 10px;
+  }
 }
 
 article .galereya {
@@ -125,6 +149,21 @@ article .galereya .big-img {
   overflow: hidden;
   float: left;
   padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  article .galereya {
+    width: 100%;
+  }
+  article .galereya .small-img, article .galereya .big-img {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  article {
+    width: 243.75%;
+  }
 }
 
 .houses-menu {
@@ -158,6 +197,12 @@ article .galereya .big-img {
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 480px) {
+  .houses-menu {
+    width: 243.75%;
+  }
+}
+
 .adverts {
   padding-top: 210px;
 }
@@ -183,7 +228,6 @@ article .galereya .big-img {
 @media screen and (max-width: 480px) {
   .adverts .advert {
     float: none;
-    width: 100%;
   }
 }
 
@@ -208,6 +252,12 @@ article .galereya .big-img {
   font-family: "Verdana";
   color: red;
   size: 24px;
+}
+
+@media screen and (max-width: 480px) {
+  .adverts {
+    width: 243.75%;
+  }
 }
 
 .second-galereya {
@@ -263,6 +313,12 @@ article .galereya .big-img {
   .second-galereya .images .img {
     float: none;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .second-galereya {
+    width: 243.75%;
   }
 }
 
@@ -416,6 +472,12 @@ article .galereya .big-img {
   display: inline-block;
 }
 
+@media screen and (max-width: 480px) {
+  .footer-wrapper {
+    width: 100%;
+  }
+}
+
 .end {
   width: 1170px;
   margin: 0 auto;
@@ -447,10 +509,13 @@ article .galereya .big-img {
 }
 
 @media screen and (max-width: 480px) {
-  .advert {
-    float: none;
-  }
-  .menu {
+  .end {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    width: 243.75%;
   }
 }
