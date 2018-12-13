@@ -124,6 +124,7 @@ article{
     width: $width;
     padding: 20px;
     padding-top: 125px;
+    text-align: center;
     margin: auto;
     // text-align: center;
     h2{
@@ -131,10 +132,16 @@ article{
         font-weight: 100;
         text-align: center;
     }
+    button{
+        @include article-button(80px);
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
 
 }
 .adverts{
     padding-top: 210px;
+    @include clearfix();
     .advert{
         float: left;
         width: 555px;
@@ -159,6 +166,161 @@ article{
         .advert-price{
             @include standartFont(red, 24px);
 
+        }
+    }
+}
+
+.second-galereya{
+    width: $width;
+    margin: auto;
+    text-align: center;
+    button{
+        @include article-button(80px);
+        margin-top: 90px;
+        margin-bottom: 150px;
+    }
+    h2{
+        @include standartFont(black, 24px);
+        font-weight: 100;
+        padding-bottom: 105px;
+    }
+    .images{
+        @include clearfix();
+        .img{
+            width: 360px;
+            height: 190;
+            padding: 10px;
+            overflow: hidden;
+            float: left;
+            img{
+                width: 360px;
+                height: 190;
+                overflow: hidden;
+            }
+        
+        }
+    }
+}
+.second-galereya-main-p{
+    @include standartFont(black, 24);
+    font-weight: bolder;
+}
+
+.second-galereya-date{
+    @include standartFont(gray, 24);
+
+}
+
+.contact{
+    background-color: #43434f;
+    h2{
+        @include standartFont(white, 24px);
+        padding-top: 70px;
+        padding-bottom: 70px;
+        font-weight: 100;
+    }
+    .container{
+        margin: auto;
+        text-align: center;
+        width: 360px;
+        
+    }
+    form{
+        width: 360px;
+        margin: 0 auto;
+        input{
+            border-radius: 30px;
+            border: none;
+            padding: 15px;
+            margin-bottom: 10px;
+            width: 325px;
+        }
+        textarea{
+            background-color: #43434f;
+            color: white;
+            border: none;
+            width: 325px;
+            @include standartFont(white, auto);
+        }
+        button{
+            @include article-button(40%);
+            margin-bottom: 115px;
+        }
+    }
+}
+
+.footer-wrapper{
+    width: $width;
+    margin: 0 auto;
+    padding-top: 140px;
+    @include clearfix();
+    .footer-main-p{
+        @include standartFont(gray, 18px);
+    }
+    .footer-menu{
+        width: 70px;
+        float: left;
+    }
+    a{
+        @include standartFont(#6f72f7, 16px);
+        text-decoration: none;
+    }
+    .know-more{
+        width: 92px;
+        float: left;
+    }
+    .partners{
+        width: 100px;
+        float: left;
+    }
+    .contacts{
+        width: 166px;
+        float: left;
+        
+    }
+    .footer-contact-p{
+        @include standartFont(black, 12px);
+        
+    }
+    .social{
+        float: right;
+        .facebook{
+            width: 24px;
+            height: 24px;
+            background-image: url(images/sprite1.png);
+            display: inline-block;
+        }
+        .twitter{
+            width: 24px;
+            height: 24px;
+            background-image: url(images/sprite1.png);
+            background-position: 24px 0;
+            display: inline-block;
+        }
+        .youtube{
+            width: 24px;
+            height: 24px;
+            background-image: url(images/sprite1.png);
+            background-position: 57px 0;
+            display: inline-block;
+        }
+    } 
+}
+
+.end{
+    width: $width;
+    margin: 0 auto;
+    padding-top: 50px;
+    .item{
+        padding-top: 20px;
+        @include clearfix();
+        .end-p{
+            float: left;
+            @include standartFont(gray, 14px);
+        }
+        .end-link{
+            float: right;
+            @include standartFont(gray, 14px);
         }
     }
 }
