@@ -1,4 +1,6 @@
 $width: 1170px;
+$input-width: 400px;
+$article-button-color: #6f72f7;
 
 @mixin standartFont($color, $size) {
     font-family: "Verdana";
@@ -12,8 +14,37 @@ $width: 1170px;
       clear: both;
     }
   }
+
+@mixin input-after {
+    &::after {
+        content: "fff";
+        
+    }
+}
+
+@mixin article-button ($right-left){
+    background-color: $article-button-color;
+    font-family: "Verdana";
+    color: white;
+    border: none;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: $right-left;
+    padding-left: $right-left;
+    border-radius: 30px;
+}
+
+@mixin header-buttons {
+    background-color: #3c4b7a;
+    font-family: "Verdana";
+    color: white;
+    border: none;
+    height: auto;
+    
+}
 header{
-    background: url(images/background.png);
+    background-image: url(images/background.png);
 }
 .wrapper{
     width: $width;
@@ -21,6 +52,8 @@ header{
     margin: auto;
     .menu{
         background-color: #3c4b7a;
+        padding-left: 10px;
+        padding-right: 10px;
         @include clearfix();
         h1{
             @include standartFont(white, 24px);
@@ -30,14 +63,102 @@ header{
         button{
             margin-top: 30px;
             // background-color: #3c4a7a;
-            
             float: right;
+            @include header-buttons();
         }
     }
     .header-content{
         text-align: center;
         padding-top: 220px;
+        padding-bottom: 285px;
         @include standartFont(white, 20px);
+        input{
+            width: $input-width;
+            border-radius: 30px;
+            border: none;
+            padding: 15px;
+        }
         
+    }
+}
+
+article{
+    width: $width;
+    margin: auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    padding-bottom: 125px;
+    form{
+        padding-bottom: 120px;
+        input{
+            border-radius: 30px;
+            border: none;
+            padding: 15px;
+        }
+        button{
+            @include article-button(30px);
+        }
+    }
+
+    .galereya{
+        @include clearfix();
+        margin: auto;
+        .small-img{
+            width: 360px;
+            height: 360px;
+            overflow: hidden;
+            float: left;
+            padding: 10px;
+        }
+        .big-img{
+            width: 740px;
+            height: 360px;
+            overflow: hidden;
+            float: left;
+            padding: 10px;
+        }
+    }
+}
+
+.houses-menu{
+    width: $width;
+    padding: 20px;
+    padding-top: 125px;
+    margin: auto;
+    // text-align: center;
+    h2{
+        @include standartFont(black, 24px);
+        font-weight: 100;
+        text-align: center;
+    }
+
+}
+.adverts{
+    padding-top: 210px;
+    .advert{
+        float: left;
+        width: 555px;
+        // height: 205px;;
+        .advert-img{
+            width: 220px;
+            height: 205px;
+            overflow: hidden;
+            // float: left;
+            display: inline-block;
+        }
+    }
+    .advert-p{
+        display: inline-block;
+        .advert-main-p{
+            @include standartFont(black, 18px);
+            font-weight: 500;
+        }
+        .advert-submain-p{
+            @include standartFont(gray, 18px);
+        }
+        .advert-price{
+            @include standartFont(red, 24px);
+
+        }
     }
 }

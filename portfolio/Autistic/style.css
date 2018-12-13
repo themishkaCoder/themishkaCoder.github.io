@@ -1,11 +1,13 @@
 header {
-  background: url(images/background.png); }
+  background-image: url(images/background.png); }
 
 .wrapper {
   width: 1170px;
   margin: auto; }
   .wrapper .menu {
-    background-color: #3c4b7a; }
+    background-color: #3c4b7a;
+    padding-left: 10px;
+    padding-right: 10px; }
     .wrapper .menu::after {
       display: block;
       content: "";
@@ -17,10 +19,101 @@ header {
       float: left; }
     .wrapper .menu button {
       margin-top: 30px;
-      float: right; }
+      float: right;
+      background-color: #3c4b7a;
+      font-family: "Verdana";
+      color: white;
+      border: none;
+      height: auto; }
   .wrapper .header-content {
     text-align: center;
     padding-top: 220px;
+    padding-bottom: 285px;
     font-family: "Verdana";
     color: white;
     size: 20px; }
+    .wrapper .header-content input {
+      width: 400px;
+      border-radius: 30px;
+      border: none;
+      padding: 15px; }
+
+article {
+  width: 1170px;
+  margin: auto;
+  background-color: #f4f4f4;
+  padding: 20px;
+  padding-bottom: 125px; }
+  article form {
+    padding-bottom: 120px; }
+    article form input {
+      border-radius: 30px;
+      border: none;
+      padding: 15px; }
+    article form button {
+      background-color: #6f72f7;
+      font-family: "Verdana";
+      color: white;
+      border: none;
+      height: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 30px;
+      padding-left: 30px;
+      border-radius: 30px; }
+  article .galereya {
+    margin: auto; }
+    article .galereya::after {
+      display: block;
+      content: "";
+      clear: both; }
+    article .galereya .small-img {
+      width: 360px;
+      height: 360px;
+      overflow: hidden;
+      float: left;
+      padding: 10px; }
+    article .galereya .big-img {
+      width: 740px;
+      height: 360px;
+      overflow: hidden;
+      float: left;
+      padding: 10px; }
+
+.houses-menu {
+  width: 1170px;
+  padding: 20px;
+  padding-top: 125px;
+  margin: auto; }
+  .houses-menu h2 {
+    font-family: "Verdana";
+    color: black;
+    size: 24px;
+    font-weight: 100;
+    text-align: center; }
+
+.adverts {
+  padding-top: 210px; }
+  .adverts .advert {
+    float: left;
+    width: 555px; }
+    .adverts .advert .advert-img {
+      width: 220px;
+      height: 205px;
+      overflow: hidden;
+      display: inline-block; }
+  .adverts .advert-p {
+    display: inline-block; }
+    .adverts .advert-p .advert-main-p {
+      font-family: "Verdana";
+      color: black;
+      size: 18px;
+      font-weight: 500; }
+    .adverts .advert-p .advert-submain-p {
+      font-family: "Verdana";
+      color: gray;
+      size: 18px; }
+    .adverts .advert-p .advert-price {
+      font-family: "Verdana";
+      color: red;
+      size: 24px; }
