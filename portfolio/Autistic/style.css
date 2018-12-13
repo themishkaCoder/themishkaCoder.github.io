@@ -2,6 +2,12 @@ header {
   background-image: url(images/background.png);
 }
 
+@media screen and (max-width: 480px) {
+  header {
+    width: 100%;
+  }
+}
+
 .wrapper {
   margin: auto;
 }
@@ -13,8 +19,6 @@ header {
 .wrapper .menu {
   width: 1170px;
   background-color: #3c4b7a;
-  padding-left: 10px;
-  padding-right: 10px;
   margin: 0 auto;
 }
 
@@ -39,6 +43,12 @@ header {
   color: white;
   border: none;
   height: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper .menu {
+    width: 100%;
+  }
 }
 
 .wrapper .header-content {
@@ -170,6 +180,13 @@ article .galereya .big-img {
   display: inline-block;
 }
 
+@media screen and (max-width: 480px) {
+  .adverts .advert {
+    float: none;
+    width: 100%;
+  }
+}
+
 .adverts .advert-p {
   display: inline-block;
 }
@@ -240,6 +257,13 @@ article .galereya .big-img {
   width: 360px;
   height: 190;
   overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .second-galereya .images .img {
+    float: none;
+    width: 100%;
+  }
 }
 
 .second-galereya-main-p {
@@ -420,4 +444,13 @@ article .galereya .big-img {
   font-family: "Verdana";
   color: gray;
   size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  .advert {
+    float: none;
+  }
+  .menu {
+    width: 100%;
+  }
 }

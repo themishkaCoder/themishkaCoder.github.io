@@ -45,6 +45,9 @@ $article-button-color: #6f72f7;
 }
 header{
     background-image: url(images/background.png);
+    @media screen and (max-width: 480px){
+        width: 100%;
+    }
 }
 .wrapper{
     // width: $width;
@@ -58,8 +61,7 @@ header{
     .menu{
         width: $width;
         background-color: #3c4b7a;
-        padding-left: 10px;
-        padding-right: 10px;
+        
         margin: 0 auto;
         @include clearfix();
         h1{
@@ -72,6 +74,9 @@ header{
             // background-color: #3c4a7a;
             float: right;
             @include header-buttons();
+        }
+        @media screen and (max-width: 480px) {
+            width: 100%;
         }
     }
     .header-content{
@@ -163,6 +168,10 @@ article{
             // float: left;
             display: inline-block;
         }
+        @media screen and (max-width: 480px){
+            float: none;
+            width: 100%;
+        }  
     }
     .advert-p{
         display: inline-block;
@@ -207,7 +216,10 @@ article{
                 height: 190;
                 overflow: hidden;
             }
-        
+            @media screen and (max-width: 480px) {
+                float: none;
+                width: 100%;
+            }
         }
     }
 }
@@ -338,6 +350,13 @@ article{
     }
 }
 
-@media screen and (min-width: 480px){
-    $width: 100%;
+@media screen and (max-width: 480px){
+    // $width: 100%;
+    .advert{
+        float: none;
+        
+    }
+    .menu{
+        width: 100%;
+    }
 }
