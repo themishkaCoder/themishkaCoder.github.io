@@ -47,13 +47,20 @@ header{
     background-image: url(images/background.png);
 }
 .wrapper{
-    width: $width;
+    // width: $width;
     
     margin: auto;
+
+    .menu-background{
+        background-color: #3c4b7a;
+        
+    }
     .menu{
+        width: $width;
         background-color: #3c4b7a;
         padding-left: 10px;
         padding-right: 10px;
+        margin: 0 auto;
         @include clearfix();
         h1{
             @include standartFont(white, 24px);
@@ -83,12 +90,14 @@ header{
 }
 
 article{
-    width: $width;
-    margin: auto;
+    // width: $width;
     background-color: #f4f4f4;
-    background-size: auto;
     padding: 20px;
     padding-bottom: 125px;
+    .article-content{
+        width: $width;
+        margin: 0 auto;
+    }
     form{
         padding-bottom: 120px;
         input{
@@ -269,14 +278,17 @@ article{
     .know-more{
         width: 92px;
         float: left;
+        padding-left: 120px;
     }
     .partners{
         width: 100px;
         float: left;
+        padding-left: 120px;
     }
     .contacts{
         width: 166px;
         float: left;
+        padding-left: 120px;
         
     }
     .footer-contact-p{
@@ -324,4 +336,8 @@ article{
             @include standartFont(gray, 14px);
         }
     }
+}
+
+@media screen and (min-width: 480px){
+    $width: 100%;
 }
