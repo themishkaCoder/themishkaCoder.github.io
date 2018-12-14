@@ -133,10 +133,15 @@ header h1 {
     padding-top: 215px; }
 
 footer {
-  background-color: #0d0d0d; }
+  background-color: #0d0d0d;
+  margin: 0 auto;
+  width: 100%;
+  background-size: 100%; }
   footer .item-6 {
+    margin: 0 auto;
     text-align: center;
-    padding: 50px; }
+    padding: 50px;
+    width: 1394px; }
     footer .item-6 p {
       font-family: "Open Sans", sans-serif;
       font-size: 18px;
