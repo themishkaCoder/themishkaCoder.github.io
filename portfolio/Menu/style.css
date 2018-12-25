@@ -141,17 +141,26 @@ header h1 {
 .item-2 .text {
   width: 697px;
   height: 1234px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   float: left;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 16px; }
   .item-2 .text .sub-p {
-    padding-left: 80px;
-    padding-right: 80px;
     font-family: "Open Sans", sans-serif;
     font-size: 18px; }
-  .item-2 .text h2 {
-    padding-top: 215px; }
 
 footer {
   background-color: #0d0d0d;

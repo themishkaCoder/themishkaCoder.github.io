@@ -184,6 +184,10 @@ header{
     .text{
         width: 697px;
         height: 1234px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         // background-color: gray;
         // justify-content: flex-end;
         float: left;
@@ -194,12 +198,13 @@ header{
         @include standartFont(16px);
         .sub-p{
         
-        padding-left: 80px;
-        padding-right: 80px;
+        // padding-left: 80px;
+        // padding-right: 80px;
         @include standartFont(18px);
         }
         h2{
-            padding-top: 215px;
+            // padding-top: 215px;
+            
         }
     }
 }
