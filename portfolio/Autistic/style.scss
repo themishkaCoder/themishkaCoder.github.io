@@ -45,6 +45,8 @@ $article-button-color: #6f72f7;
 }
 header{
     background-image: url(images/background.png);
+    background-position: center;
+    background-size: 100%;
     @media screen and (max-width: 480px){
         width: $width / 480px * 100%;
     }
@@ -139,6 +141,8 @@ article{
             overflow: hidden;
             float: left;
             padding: 10px;
+            position: relative;
+
         }
         .big-img{
             width: 740px;
@@ -146,15 +150,92 @@ article{
             overflow: hidden;
             float: left;
             padding: 10px;
+            position: relative;
         }
-        @media screen and (max-width: 480px){
-            width: 100%;
-            .small-img, .big-img{
-                float: none;
-                // width: 100%;
+
+        // @media screen and (max-width: 480px){
+        //     width: 100%;
+        //     .small-img, .big-img{
+        //         float: none;
+        //         // width: 100%;
+        //     }
+        // }
+        .hover-fon{
+            width: 370px;
+            height: 370px;
+            // background-color: red;
+            position: absolute;
+            top: 10px;
+            bottom: 0;
+            right: 0;
+            left: 10px;
+            &:hover{
+                transition: 0.5s;
+                background-color: rgba(1, 1, 1, 0.7);
+                h2{
+                    transition: 0.5s;
+                    top: 145px;
+                    left: 105px;
+                }
             }
+            &:not(:hover){
+                transition: 0.5s;
+                background-color: rgba(1, 1, 1, 0);
+                h2{
+                    transition: 0.5s;
+                    top: 380px;
+                    left: 105px;
+                }
+            }
+            h2{
+                position: absolute;
+                @include standartFont(white, 24px);
+                top: -60px;
+               
+            }
+            
+        }
+
+        
+
+        .hover-fon-big{
+            width: 750px;
+            height: 370px;
+            // background-color: red;
+            position: absolute;
+            top: 10px;
+            bottom: 0;
+            right: 0;
+            left: 10px;
+            &:hover{
+                transition: 0.5s;
+                background-color: rgba(1, 1, 1, 0.7);
+                h2{
+                    transition: 0.5s;
+                    top: 145px;
+                    left: 300px;
+                }
+            }
+            &:not(:hover){
+                transition: 0.5s;
+                background-color: rgba(1, 1, 1, 0);
+                h2{
+                    transition: 0.5s;
+                    top: 380px;
+                    left: 300px;
+                }
+            }
+            h2{
+                position: absolute;
+                @include standartFont(white, 24px);
+                top: 380px;
+                left: 300px;
+            }
+
         }
     }
+
+
     @media screen and (max-width: 480px){
         width: $width / 480px * 100%;
         
