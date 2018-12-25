@@ -25,6 +25,9 @@ header{
         font-weight: 300;
         padding: 20px;
     }
+    @media screen and (max-width: 480px){
+        width: 100%;
+    }
 }
 
 .container{
@@ -39,6 +42,10 @@ header{
             display: inline-block;
             top: 300px;
             right: 220px;
+        }
+        @media screen and (max-width: 480px){
+            width: 100%;
+            overflow: hidden;
         }
     }
     .item-3{
@@ -65,6 +72,13 @@ header{
             color: white;
             padding: 50px;
         }
+        @media screen and (max-width: 480px){
+            width: 100%;
+            overflow: hidden;
+            .about-food{
+                width: 100%;
+            }
+        }
     }
 
     .item-4{
@@ -76,6 +90,10 @@ header{
 
         h2{
             @include standartFont(24px);
+        }
+        @media screen and (max-width: 480px){
+            width: 100%;
+            overflow: hidden;
         }
     }
 
@@ -125,6 +143,17 @@ header{
                     color: white;
                     padding: 50px;
                 }
+                @media screen and (min-width: 480px) {
+                    .about-tea{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 480px) {
+            .about-tea{
+                width: 200px;
+                top: 0;
             }
         }
     }    
@@ -140,7 +169,7 @@ header{
             padding-top: 20px;
             padding-bottom: 20px;
             @include standartFont(28px);
-            width: 650px;
+            width: calc(100% - 250px);
             border: none;
             outline: none;
         }
@@ -166,6 +195,16 @@ header{
             background-color: black;
             display: inline-block;
         }
+    }
+    @media screen and (max-width: 480px){
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+        
+        .about-tea{
+            width: 100%;
+        }
+        
     }
 }
 
@@ -207,6 +246,10 @@ header{
             
         }
     }
+    @media screen and (max-width: 480px){
+        
+        overflow: hidden;
+    }
 }
 
 footer{
@@ -224,6 +267,12 @@ footer{
             color: white;
             
         }
+        @media screen and (max-width: 480px){
+            width: 480px / $width * 100%;
+        }
+    }
+    @media screen and (max-width: 480px){
+        width: 100%;
     }
 }
 
