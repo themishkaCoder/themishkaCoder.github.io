@@ -99,13 +99,34 @@ header h1 {
       font-family: "Open Sans", sans-serif;
       font-size: 24px; }
     .container .join-us input {
-      border: 6px solid;
       background-color: white;
       padding-top: 20px;
       padding-bottom: 20px;
       font-family: "Open Sans", sans-serif;
       font-size: 28px;
-      width: 650px; }
+      width: 650px;
+      border: none;
+      outline: none; }
+    .container .join-us button {
+      border: none;
+      background-color: white;
+      font-family: "Open Sans", sans-serif;
+      font-size: 28px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin-bottom: 215px; }
+    .container .join-us .inputs {
+      width: 885px;
+      height: 75px;
+      margin: 0 auto;
+      border: 5px solid; }
+    .container .join-us .devider {
+      width: 3px;
+      height: 15px;
+      background-color: black;
+      display: inline-block; }
 
 .item-2::after {
   display: block;

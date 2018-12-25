@@ -4,7 +4,7 @@ header {
   background-size: 100%; }
   @media screen and (max-width: 480px) {
     header {
-      width: 243.75%; } }
+      width: 41.02564%; } }
 
 .wrapper {
   margin: auto; }
@@ -46,11 +46,6 @@ header {
       border-radius: 30px;
       border: none;
       padding: 15px; }
-  @media screen and (max-width: 480px) {
-    .wrapper {
-      width: 100%;
-      margin: 0 auto;
-      text-align: center; } }
 
 article {
   background-color: #f4f4f4;
@@ -74,11 +69,16 @@ article {
       color: white;
       border: none;
       height: auto;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
       padding-right: 30px;
       padding-left: 30px;
       border-radius: 30px; }
+    article form .inputs {
+      width: 600px;
+      background-color: white;
+      border-radius: 30px;
+      display: inline-block; }
     @media screen and (max-width: 480px) {
       article form {
         width: 100%; }
@@ -180,7 +180,7 @@ article {
         left: 300px; }
   @media screen and (max-width: 480px) {
     article {
-      width: 243.75%; } }
+      width: 41.02564%; } }
 
 .houses-menu {
   width: 1170px;
@@ -200,8 +200,8 @@ article {
     color: white;
     border: none;
     height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-right: 80px;
     padding-left: 80px;
     border-radius: 30px;
@@ -243,9 +243,6 @@ article {
       font-family: "Verdana";
       color: red;
       size: 24px; }
-  @media screen and (max-width: 480px) {
-    .adverts {
-      width: 243.75%; } }
 
 .second-galereya {
   width: 1170px;
@@ -257,8 +254,8 @@ article {
     color: white;
     border: none;
     height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-right: 80px;
     padding-left: 80px;
     border-radius: 30px;
@@ -288,9 +285,6 @@ article {
       .second-galereya .images .img {
         float: none;
         width: 100%; } }
-  @media screen and (max-width: 480px) {
-    .second-galereya {
-      width: 243.75%; } }
 
 .second-galereya-main-p {
   font-family: "Verdana";
@@ -339,8 +333,8 @@ article {
       color: white;
       border: none;
       height: auto;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 15px;
+      padding-bottom: 15px;
       padding-right: 40%;
       padding-left: 40%;
       border-radius: 30px;
@@ -425,10 +419,7 @@ article {
       font-family: "Verdana";
       color: gray;
       size: 14px; }
-  @media screen and (max-width: 480px) {
-    .end {
-      width: 100%; } }
 
 @media screen and (max-width: 480px) {
   footer {
-    width: 243.75%; } }
+    width: 41.02564%; } }

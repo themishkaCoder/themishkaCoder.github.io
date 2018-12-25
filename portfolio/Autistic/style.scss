@@ -28,8 +28,8 @@ $article-button-color: #6f72f7;
     color: white;
     border: none;
     height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-right: $right-left;
     padding-left: $right-left;
     border-radius: 30px;
@@ -48,7 +48,7 @@ header{
     background-position: center;
     background-size: 100%;
     @media screen and (max-width: 480px){
-        width: $width / 480px * 100%;
+        width: 480px / $width * 100%;
     }
 }
 .wrapper{
@@ -95,9 +95,9 @@ header{
         
     }
     @media screen and (max-width: 480px){
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
+        // width: 100%;
+        // margin: 0 auto;
+        // text-align: center;
     }
 }
 
@@ -122,6 +122,12 @@ article{
         }
         button{
             @include article-button(30px);
+        }
+        .inputs{
+            width: 600px;
+            background-color: white;
+            border-radius: 30px;
+            display: inline-block;
         }
         @media screen and (max-width: 480px) {
             width: 100%;
@@ -237,7 +243,7 @@ article{
 
 
     @media screen and (max-width: 480px){
-        width: $width / 480px * 100%;
+        width: 480px / $width * 100%;
         
     }
 }
@@ -298,10 +304,10 @@ article{
 
         }
     }
-    @media screen and (max-width: 480px){
-        width: $width / 480px * 100%;
+    // @media screen and (max-width: 480px){
+    //     width: $width / 480px * 100%;
         
-    }
+    // }
 }
 
 .second-galereya{
@@ -337,10 +343,10 @@ article{
             }
         }
     }
-    @media screen and (max-width: 480px) {
-        width: $width / 480px * 100%;
+    // @media screen and (max-width: 480px) {
+    //     width: $width / 480px * 100%;
         
-    }
+    // }
 }
 .second-galereya-main-p{
     @include standartFont(black, 24);
@@ -471,12 +477,12 @@ article{
         }
         
     }
-    @media screen and (max-width: 480px) {
-        width: 100%;
-    }
+    // @media screen and (max-width: 480px) {
+    //     width: 100%;
+    // }
 }
 footer{
     @media screen and (max-width: 480px) {
-        width: $width / 480px * 100%;
+        width: 480px / $width * 100%;
     }
 }
