@@ -1,0 +1,334 @@
+@charset "UTF-8";
+header {
+  margin: 0 auto;
+  border-bottom: 1px solid black; }
+  header .parallax {
+    background: url("images/10.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 100%; } }
+
+.cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 20px; }
+  .menu a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: gray;
+    text-decoration: none;
+    padding: 0 5px; }
+    .menu a:hover {
+      color: black; }
+  .menu .fa-camera {
+    color: #c0a064;
+    font-size: 18px; }
+  .menu .header-social {
+    font-size: 18px;
+    color: gray; }
+  @media screen and (max-width: 768px) {
+    .menu {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .menu .camera {
+        padding-left: 40px; }
+      .menu .header-social {
+        padding-right: 40px; }
+      .menu .left-menu {
+        display: none; } }
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 350px;
+  padding-bottom: 220px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .info h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    color: #c0a064; }
+  .info p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: gray; }
+  .info button {
+    padding: 15px 60px;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid #c0a064;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #c0a064;
+    margin-top: 120px; }
+
+article {
+  padding-top: 125px;
+  border-bottom: 1px solid black; }
+
+.recent h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 32px;
+  color: black;
+  text-align: center; }
+
+.recent .item-1 {
+  padding-top: 65px; }
+  .recent .item-1::after {
+    display: block;
+    content: "";
+    clear: both; }
+  .recent .item-1 .image-1 {
+    padding-left: 15px;
+    padding-right: 30px;
+    overflow: hidden;
+    display: inline-block;
+    float: left; }
+  .recent .item-1 .image-2 {
+    overflow: hidden;
+    display: inline-block; }
+  .recent .item-1 .image-3 {
+    overflow: hidden;
+    display: inline-block;
+    padding-top: 22px; }
+
+.recent .item-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 120px; }
+  .recent .item-2 .image-4 {
+    overflow: hidden; }
+
+@media screen and (max-width: 768px) {
+  .recent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .recent .image-1 {
+      float: none;
+      padding-left: 0;
+      padding-right: 0; }
+      .recent .image-1 img {
+        max-width: 100%; }
+    .recent .image-2 {
+      margin-left: 15px;
+      max-width: 360px; }
+      .recent .image-2 img {
+        max-width: 100%; }
+    .recent .image-3 {
+      padding-top: 0;
+      max-width: 360px; }
+      .recent .image-3 img {
+        max-width: 100%; }
+    .recent .image-4 {
+      width: 100%; }
+      .recent .image-4 img {
+        max-width: 100%; } }
+
+.collections {
+  padding-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  /* Элементы внутри контейнера будут позиционироваться горизонтально */
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-bottom: 1px solid black; }
+  .collections h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    color: black; }
+  .collections p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: black; }
+  .collections button {
+    padding: 15px 30px;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid #c0a064;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #c0a064; }
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  padding: 0 60px; }
+  .text h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    color: black; }
+  .text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: black; }
+  .text button {
+    padding: 15px 30px;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid #c0a064;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #c0a064; }
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .flex-container .row-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  @media screen and (max-width: 768px) {
+    .flex-container {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .flex-container .row-1:nth-child(2) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; }
+      .flex-container .row-1 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-bottom: 40px; }
+      .flex-container .text {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        padding: 0 140px;
+        text-align: center; }
+      .flex-container button {
+        margin-bottom: 30px; } }
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 120px; }
+  .contact form h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    color: black;
+    padding-bottom: 60px; }
+  .contact form textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #bfbebc;
+    width: 370px;
+    resize: none;
+    padding: 15px 16px;
+    outline: none; }
+  .contact form input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #bfbebc;
+    width: 370px;
+    padding: 15px 15px;
+    outline: none; }
+  .contact form button {
+    padding: 15px 176px;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid #c0a064;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #c0a064;
+    margin-top: 20px; }
+
+.contact .links {
+  text-align: center; }
+  .contact .links i {
+    font-size: 18px;
+    font-size: 24px;
+    color: #2c2a28;
+    padding: 0 10px; }
+  .contact .links p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #6c6a68; }
