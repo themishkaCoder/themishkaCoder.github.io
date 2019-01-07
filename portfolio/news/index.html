@@ -13,17 +13,62 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-xs">
                     <div class="menu navbar-fixed-top">
-                        <p><i class="fas fa-grip-lines"></i></p>
-                        <p><i class="fas fa-caret-right"></i>WebNews</p>
-                        <a href=""><p><i class="fas fa-external-link-square-alt"></i></p></a>
+
+                            <div class="dropdown">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"><h3><i class="fas fa-bars"></i></h3></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="main-li">
+                                            <div>
+                                                <h3>Категории</h3>
+                                            </div>
+                                        </li>
+                                        <li><div><h4><a href="">Live</a></h4></div></li>
+                                        <li><div><h4><a href="">Последние</a></h4></div></li>
+                                        <li><div><h4><a href="">15 минут</a></h4></div></li>
+                                        <li><div><h4><a href="">Час</a></h4></div></li>
+                                        <li><div><h4><a href="">День</a></h4></div></li>
+                                        <li><div><h4><a href="">Неделя</a></h4></div></li>
+                                        <li><div><h4><a href="">Месяц</a></h4></div></li>
+                                        <li><div><h4><a href="">Всё время</a></h4></div></li>
+
+
+                                        
+                                    </ul>
+                                </div>
+
+
+                        <!-- <h3><i class="fas fa-grip-lines"></i></h3> -->
+                        <h3><i class="fas fa-angle-right"></i>WebNews</h3>
+                        <a href=""><h3><i class="fas fa-caret-down"></i></h3></a>
+                        <div class="right-menu">
+                            <div><h4><a href="">Live</a></h4></div>
+                            <div><h4><a href="">Последние</a></h4></div>
+                            <div><h4><a href="">15 минут</a></h4></div>
+                            <div><h4><a href="">Час</a></h4></div>
+                            <div><h4><a href="">День</a></h4></div>
+                            <div><h4><a href="">Неделя</a></h4></div>
+                            <div><h4><a href="">Месяц</a></h4></div>
+                            <div><h4><a href="">Всё время</a></h4></div>
+                        </div>
+                    </div>
+                    <div class="sub-menu">
+                        <a href="">Все</a>
+                        <a href="">Новости</a>
+                        <a href="">Фильмы</a>
+                        <a href="">Музыка</a>
+                        <a href="">Техно</a>
+                        <a href="">Еда</a>
+                        <a href="">Детское</a>
+                        <a href="">Спорт</a>
                     </div>
                 </div>
             </div>
@@ -35,88 +80,245 @@
             <div class="row center-block">
                 <div class="news">
 
-                    <div class="col-xs"><img src="images/1.jpg" alt=""></div>
+                    <!-- <div class="col-xs"><img src="images/1.jpg" alt="" class="resp-image"></div> -->
 
-                    <div class="col-xs">
+                    <div class="col-xs col-md-8 col-lg-6">
+                        <div class="img-decor">
+                            <img src="images/1.jpg" alt="" class="resp-image">
+                            <div class="shadow">
+                                <div class="stat">
+                                    <p><i class="far fa-eye"></i>17</p>
+                                    <p><i class="far fa-star"></i>9.5</p>
+                                </div>
+
+                                <div class="time">
+                                    <p><i class="far fa-clock"></i>13:00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <img src="images/1.jpg" alt="" class="resp-image"> -->
+
                         <h3>Нищівні пожежі в <br>
                             Португалії</h3>
-                        <div class="post-info"></div>
+                        <div class="post-info">
+                            <img src="images/9.png" alt="" class="mini-five">
+                            <p>5-й Канал</p>
+                            <p><i class="far fa-clock"></i> 17:00</p>
+                        </div>
                         <p>
                             Идейные соображения высшего порядка, а также сложившаяся структура организации в значительной степени обуславливает создание направлений прогрессивного развития. Задача организации, в особенности же укрепление и развитие структуры влечет за собой процесс внедрения и модернизации модели развития.Идейные соображения высшего порядка, а также сложившаяся структура организации значительной степени обуславливает создание направлений прогрессивного развития. 
                         </p>
-                        <div class="devider"></div>
+                        <!-- <div class="devider"></div> -->
                     </div>
 
-                    <div class="col-xs"><img src="images/2.jpg" alt=""></div>
+                    <!-- <div class="col-xs"><img src="images/2.jpg" alt="" class="resp-image"></div> -->
 
-                    <div class="col-xs">
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-6">
+
+                            <div class="img-decor">
+                                    <img src="images/2.jpg" alt="" class="resp-image">
+                                    <div class="shadow">
+                                        <div class="stat">
+                                            <p><i class="far fa-eye"></i>17</p>
+                                            <p><i class="far fa-star"></i>9.5</p>
+                                        </div>
+                
+                                        <div class="time">
+                                            <p><i class="far fa-clock"></i>13:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
                         <h3>Чи бояться депутати втратити <br>
                             недоторканність?</h3>
-                        <div class="post-info"></div>
+                        <div class="post-info">
+                            <img src="images/bbc.png" alt="">
+                            <p>5-й Канал</p>
+                            <p><i class="far fa-clock"></i> 17:00</p>
+                        </div>
                         <p>Идейные соображения высшего порядка, а также сложившаяся структура организации в значительной степени обуславливает создание направлений прогрессивного развития. </p>                            
                         <div class="devider"></div>
                     </div>
 
-                    <div class="col-xs"><img src="images/3.jpg" alt=""></div>
+                    <!-- <div class="col-xs"><img src="images/3.jpg" alt="" class="resp-image"></div> -->
 
+                    <div class="col-xs col-sm-6 col-md-4 col-lg-6">
+                            <div class="img-decor">
+                                    <img src="images/3.jpg" alt="" class="resp-image">
+                                    <div class="shadow">
+                                        <div class="stat">
+                                            <p><i class="far fa-eye"></i>17</p>
+                                            <p><i class="far fa-star"></i>9.5</p>
+                                        </div>
+                
+                                        <div class="time">
+                                            <p><i class="far fa-clock"></i>13:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        <h3>Рада не схвалила зміни до бюджету в <br>
+                            цілому</h3>
+                        <div class="post-info">
+                            <img src="images/korispondent.png" alt="" class="mini-kores">
+                            <p>Корреспондент</p>
+                            <p><i class="far fa-clock"></i> 17:00</p>
+                        </div>
+                        <p>Идейные соображения высшего порядка, а также сложившаяся структура организации в значительной степени обуславливает создание направлений прогрессивного развития. </p>
+                        <div class="devider"></div>
+                    </div>
+                    <div class="clearfix"></div>
                     <div class="col-xs">
-                        
+                        <div class="five-channel">
+                            <img src="images/9.png" alt="" class="five">
+                            <div class="text">
+                                <h4>5-й канал</h4>
+                                <p>С другой стороны сложившаяся структура организации позволяет выполнять важные задания по разработке соответствующий условий активизации. </p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-xs">
+                    <!-- <div class="col-xs">
                         <h3>Рада не схвалила зміни до бюджету в <br>
                             цілому</h3>
                         <div class="post-info"></div>
                         <p>Идейные соображения высшего порядка, а также сложившаяся структура организации в значительной степени обуславливает создание направлений прогрессивного развития. </p>
                         <div class="devider"></div>
+                    </div> -->
+
+                    <div class="col-xs col-sm-6 col-lg-4">
+                        <div class="img-decor">
+                            <img src="images/4.jpg" alt="" class="resp-image">
+                            <div class="shadow">
+                                <div class="stat">
+                                    <p><i class="far fa-eye"></i>17</p>
+                                    <p><i class="far fa-star"></i>9.5</p>
+                                </div>
+        
+                                <div class="time">
+                                    <p><i class="far fa-clock"></i>13:00</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-xs"><img src="images/4.jpg" alt=""></div>
-
-                    <div class="col-xs">
+                    <div class="col-xs col-sm-6 col-lg-8">
                         <h3>Загартувалося нове покоління вільних людей, – Порошенко привітав українців з Днем молоді</h3>
-                        <div class="post-info"></div>
+                        <div class="post-info">
+                            <img src="images/24.png" alt="">
+                            <p>24-й Канал</p>
+                            <p><i class="far fa-clock"></i> 17:00</p>
+                        </div>
                         <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и реализации модели развития. Не следует, однако забывать, что сложившаяся структура организации играет важную роль в формировании форм развития. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
                         <div class="devider"></div>
                     </div>
+                    <div class="clearfix"></div>
+                    <div class="col-xs col-sm-6 col-lg-4"><div class="img-decor">
+                            <img src="images/5.jpg" alt="" class="resp-image">
+                            <div class="shadow">
+                                <div class="stat">
+                                    <p><i class="far fa-eye"></i>17</p>
+                                    <p><i class="far fa-star"></i>9.5</p>
+                                </div>
+        
+                                <div class="time">
+                                    <p><i class="far fa-clock"></i>13:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="col-xs"><img src="images/5.jpg" alt=""></div>
-
-                    <div class="col-xs">
+                    <div class="col-xs col-sm-6 col-lg-8">
                         <h3>Трамп випадково визнав втручання Росії у вибори президента США</h3>
-                        <div class="post-info"></div>
+                        <div class="post-info">
+                            <img src="images/24.png" alt="">
+                            <p>24-й Канал</p>
+                            <p><i class="far fa-clock"></i> 17:00</p>
+                        </div>
                         <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и реализации модели развития. Не следует, однако забывать, что сложившаяся структура организации играет важную роль в формировании форм развития. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
                         <div class="devider"></div>
                     </div>
+                    <div class="clearfix"></div>
+                    <div class="col-xs col-sm-6 col-lg-4"><div class="img-decor">
+                            <img src="images/6.jpg" alt="" class="resp-image">
+                            <div class="shadow">
+                                <div class="stat">
+                                    <p><i class="far fa-eye"></i>17</p>
+                                    <p><i class="far fa-star"></i>9.5</p>
+                                </div>
+        
+                                <div class="time">
+                                    <p><i class="far fa-clock"></i>13:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="col-xs"><img src="images/6.jpg" alt=""></div>
-
-                    <div class="col-xs">
+                    <div class="col-xs col-sm-6 col-lg-8">
                         <h3>"СтранаUA", 112 та NewsOne працюють на підрив України, але президента це влаштовує, – політолог</h3>
-                        <div class="post-info"></div>
+                        <div class="post-info">
+                            <img src="images/24.png" alt="">
+                            <p>24-й Канал</p>
+                            <p><i class="far fa-clock"></i> 17:00</p>
+                        </div>
                         <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и реализации модели развития. Не следует, однако забывать, что сложившаяся структура организации играет важную роль в формировании форм развития. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
                         <div class="devider"></div>
                     </div>
+                    <div class="clearfix"></div>
+                    <div class="col-xs col-sm-6 col-lg-4"><div class="img-decor">
+                            <img src="images/7.jpg" alt="" class="resp-image">
+                            <div class="shadow">
+                                <div class="stat">
+                                    <p><i class="far fa-eye"></i>17</p>
+                                    <p><i class="far fa-star"></i>9.5</p>
+                                </div>
+        
+                                <div class="time">
+                                    <p><i class="far fa-clock"></i>13:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="col-xs"><img src="images/7.jpg" alt=""></div>
-
-                    <div class="col-xs">
+                    <div class="col-xs col-sm-6 col-lg-8">
                         <h3>Україна заплатить за це більшу ціну, – в Росії готуються до нових правил в'їзду в Україну</h3>
-                        <div class="post-info"></div>
+                        <div class="post-info">
+                            <img src="images/24.png" alt="">
+                            <p>24-й Канал</p>
+                            <p><i class="far fa-clock"></i> 17:00</p>
+                        </div>
                         <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и реализации модели развития. Не следует, однако забывать, что сложившаяся структура организации играет важную роль в формировании форм развития. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
                         <div class="devider"></div>
                     </div>
+                    <div class="clearfix"></div>
+                    <div class="col-xs col-sm-6 col-lg-4"><div class="img-decor">
+                            <img src="images/8.jpg" alt="" class="resp-image">
+                            <div class="shadow">
+                                <div class="stat">
+                                    <p><i class="far fa-eye"></i>17</p>
+                                    <p><i class="far fa-star"></i>9.5</p>
+                                </div>
+        
+                                <div class="time">
+                                    <p><i class="far fa-clock"></i>13:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <div class="col-xs"><img src="images/8.jpg" alt=""></div>
-
-                    <div class="col-xs">
+                    <div class="col-xs col-sm-6 col-lg-8">
                         <h3>Смертельна пожежа у Пакистані: від загорання бензовоза загинули більше 100 людей</h3>
-                        <div class="post-info"></div>
+                        <div class="post-info">
+                            <img src="images/24.png" alt="">
+                            <p>24-й Канал</p>
+                            <p><i class="far fa-clock"></i> 17:00</p>
+                        </div>
                         <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнять важные задания по разработке существенных финансовых и административных условий. Разнообразный и богатый опыт рамки и место обучения кадров способствует подготовки и реализации модели развития. Не следует, однако забывать, что сложившаяся структура организации играет важную роль в формировании форм развития. Таким образом укрепление и развитие структуры позволяет выполнять важные задания по разработке направлений прогрессивного развития.</p>
                         <div class="devider"></div>
                     </div>
 
                     <!-- <div class="col-xs"><img src="images/8.jpg" alt=""></div> -->
+                    <div class="clearfix"></div>
 
                     <div class="col-xs">
                         <div class="load-more">
@@ -147,5 +349,20 @@
             </div>
         </div>
     </article>
+
+    <footer>
+        <div class="container">
+            <div class="row center-block">
+                <div class="col-xs col-sm-6 col-md-3"><h4><i class="fas fa-angle-right"></i></i>WebNews</h4></div>
+                <div class="col-xs col-md-3"><a href=""><h4>Свежие видео и новости</h4></a></div>
+                <div class="col-xs col-md-2"><a href=""><h4>О рейтинге</h4></a></div>
+                <div class="col-xs col-md-4"><h4><i class="far fa-envelope"></i>quastion@webnews.com.ua</h4></div>
+            </div>
+            <div class="devider"></div>
+            <div class="row center-block">
+                <div class="col-xs"><p>© 2005—2017, WebNews. Все права защищены</p></div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
