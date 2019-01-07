@@ -1,0 +1,80 @@
+$stn-color: #ff4b39;
+
+
+@mixin p-fonts ($size, $color) {
+    font-size: $size;
+    color: $color;
+}
+
+@mixin h-font ($color) {
+    color: $color;
+}
+
+@mixin icons ($size, $color) {
+    font-size: $size;
+    color: $color;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: $stn-color;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    p{
+        @include p-fonts(16px, white);
+    }
+    i{
+        @include icons(24px, white);
+    }
+}
+
+.news{
+    img{
+        width: 100%;
+        // padding-left: 15px;
+    }
+    .devider{
+        border-bottom: 1px solid gray;
+    }
+    .pages{
+        display: flex;
+        justify-content: center;
+        *{
+            display: inline-block;
+            // padding: 10px;
+            // margin: 5px;
+        }
+        a{
+            padding: 10px;
+            margin: 5px;
+        }
+        .number{
+            text-align: center;
+            border: 1px solid gray;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            margin: 5px;
+            &:hover{
+                transition: 0.5s;
+                border: 4px solid $stn-color;
+            }
+        }
+        
+    }
+    .load-more{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        i{
+            padding-right: 10px;
+        }
+        p{
+            border-bottom: 1px dashed;
+            display: inline-block;
+        }
+    }
+}
