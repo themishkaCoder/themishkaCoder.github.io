@@ -159,10 +159,12 @@ article {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: none; }
-  .dropdown-menu li a {
-    color: #909090; }
-  .dropdown-menu li:hover {
-    border-left: 3px solid #ff4b39; }
+  .dropdown-menu li {
+    padding-left: 20px; }
+    .dropdown-menu li a {
+      color: #909090; }
+    .dropdown-menu li:hover {
+      border-left: 3px solid #ff4b39; }
   .dropdown-menu .main-li {
     background-color: #ff4b39;
     color: white;
