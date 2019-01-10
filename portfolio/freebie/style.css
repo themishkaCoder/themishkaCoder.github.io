@@ -74,7 +74,8 @@ header {
   -ms-flex-direction: column;
   flex-direction: column;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  text-align: center; }
   .info h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 32px;
@@ -110,7 +111,6 @@ article {
     content: "";
     clear: both; }
   .recent .item-1 .image-1 {
-    padding-left: 15px;
     padding-right: 30px;
     overflow: hidden;
     display: inline-block;
@@ -127,9 +127,6 @@ article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   padding-top: 20px;
   padding-bottom: 120px; }
   .recent .item-2 .image-4 {
@@ -152,23 +149,27 @@ article {
     .recent .image-1 {
       float: none;
       padding-left: 0;
-      padding-right: 0; }
+      padding-right: 0;
+      min-width: 320px;
+      width: 96%; }
       .recent .image-1 img {
-        max-width: 100%; }
+        width: 100%; }
     .recent .image-2 {
-      margin-left: 15px;
-      max-width: 360px; }
+      min-width: 320px;
+      width: 96%; }
       .recent .image-2 img {
-        max-width: 100%; }
+        width: 100%; }
     .recent .image-3 {
       padding-top: 0;
-      max-width: 360px; }
+      min-width: 320px;
+      width: 96%; }
       .recent .image-3 img {
-        max-width: 100%; }
+        width: 100%; }
     .recent .image-4 {
-      width: 100%; }
+      min-width: 320px;
+      width: 96%; }
       .recent .image-4 img {
-        max-width: 100%; } }
+        width: 100%; } }
 
 .collections {
   padding-top: 120px;
@@ -275,6 +276,12 @@ article {
         text-align: center; }
       .flex-container button {
         margin-bottom: 30px; } }
+  @media screen and (max-width: 768px) {
+    .flex-container .image-5 {
+      min-width: 320px;
+      width: 96%; }
+      .flex-container .image-5 img {
+        width: 100%; } }
 
 .contact form {
   display: -webkit-box;
@@ -300,7 +307,8 @@ article {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #bfbebc;
-    width: 370px;
+    width: 320px;
+    min-width: 320px;
     resize: none;
     padding: 15px 16px;
     outline: none; }
@@ -308,7 +316,8 @@ article {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #bfbebc;
-    width: 370px;
+    width: 320px;
+    min-width: 320px;
     padding: 15px 15px;
     outline: none; }
   .contact form button {
@@ -332,3 +341,18 @@ article {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: #6c6a68; }
+
+@media screen and (max-width: 768px) {
+  .contact form {
+    min-width: 320px;
+    width: 100%; }
+  .contact input {
+    width: 80%; }
+  .contact button {
+    padding: 15px 100%;
+    background-color: transparent;
+    outline: none;
+    border: 3px solid #c0a064;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #c0a064; } }
