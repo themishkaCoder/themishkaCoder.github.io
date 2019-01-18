@@ -1,0 +1,416 @@
+$green: #54d154;
+$dark-green: #2b9b2b;
+$dark: #333333;
+$light-dark: #444444;
+$dark-black: #222222;
+
+@mixin btn ($padd-tb, $padd-rl, $color) {
+    padding: $padd-tb $padd-rl;
+    background-color: $color;
+    border-radius: 30px;
+    border: none;
+}
+
+@mixin label ($bc) {
+    background-color: $bc;
+    padding: 1px 2px;
+    border-radius: 2px;
+    font-size: 0.9em;
+}
+
+@mixin gray-text {
+    h2{
+        color: gray;
+        font-weight: 400;
+        letter-spacing: 6px;
+    }
+    p{
+        color: gray;
+    }
+}
+
+@mixin white-text {
+    h3{
+        color: white;
+        font-weight: 400;
+        letter-spacing: 6px;
+    }
+    p{
+        color: white;
+    }
+    .devider{
+        background-color: white;
+        // margin-bottom: 20px;
+    }
+}
+
+@mixin green-text {
+    h2{
+        color: $dark-green;
+        font-weight: 400;
+        letter-spacing: 6px;
+    }
+    p{
+        color: $dark-green;
+    }
+}
+
+header{
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    background-size: cover;
+    // width: 500px;
+    height: 100%;
+    .container{
+        margin-top: 260px;
+        margin-bottom: 260px;
+        h1{
+            color: white;
+        }
+        .header-button{
+            @include btn(10px, 50px, #54d154);
+            color: white;
+        } 
+    }
+}
+
+.navigate{
+    a{
+        color: white;
+        &:hover{
+            color: white;
+            font-weight: bold;
+            border-top: 5px solid #54d154;
+        }
+    }
+}
+
+.devider{
+    width: 45px;
+    height: 2px;
+    background-color: gray;
+    text-align: center;
+}
+
+article{
+    .container{
+        margin-top: 40px;
+    }
+    .row:nth-child(1){
+        @include gray-text();
+        // h2{
+        //     color: gray;
+        // }
+        // p{
+        //     color: gray;
+        // }
+    }
+
+    .merits{
+        margin-top: 60px;
+        h2{
+            font-weight: bold;
+        }
+        button{
+            @include btn(6px, 30px, $green);
+            color: white;
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+
+}
+
+.gallery{
+    background-color: $green;
+    padding: 20px 0;
+    .devider{
+        background-color: $dark-green;
+    }
+    h2{
+        color: $dark-green;
+    }
+    p{
+        color: $dark-green;
+    }
+    .buttons{
+        // background-color: white;
+        // border-radius: 30px;
+    }
+    .slide-btn{
+        @include btn(5px, 20px, white);
+        color: $dark-green;
+        border-radius: 0;
+        outline: none;
+        &:focus{
+            background-color: $dark-green;
+            color: white;
+        }
+        &:nth-child(1){
+            border-left: 1px solid;
+            border-radius: 30px 0 0 30px;
+            margin-left: 20px;
+        }
+
+        &:nth-child(3){
+            border-left: 1px solid;
+            border-radius: 0 30px 30px 0;
+        }
+    }
+    .gallery-photo{
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+        margin-top: 30px;
+        margin: auto;
+        margin-bottom: 30px;
+        .glr-btn{
+            @include btn(5px, 20px, $dark-green);
+            color: white;
+        }
+    }
+
+    .photos{
+        margin-top: 30px;
+        .glr-btn{
+            @include btn(5px, 25px, $dark-green);
+            color: white;
+            margin: 60px 0;
+        }
+    }
+}
+
+.sliders{
+    margin-top: 40px;
+    // height: 800px;
+    .row:nth-child(1){
+        @include gray-text();
+    }
+}
+
+.carusel{
+    margin-top: 60px;
+    .text{
+        // margin-top: 100px;
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+    p{
+        font-weight: bold;
+    }
+    i{
+        color: gray;
+    }
+}
+
+.happy-client{
+    margin-top: 60px;
+    padding-top: 35px;
+    padding-bottom: 60px;
+    background-color: #f2f1f1;
+    .row:nth-child(1){
+        @include gray-text();
+    }
+}
+
+.clients{
+    .row{
+        padding-top: 60px;
+    }
+    .row:nth-child(1){
+        div{
+            margin-bottom: 50px;
+        }
+    }
+    .row:nth-child(2){
+        div{
+            margin-bottom: 50px;
+        }
+    }
+    button{
+        @include btn(10px, 25px, #dddcdc);
+        color: #a9a1a1;
+        i{
+            padding-left: 20px;
+        }
+    }
+}
+
+.team{
+    background-color: $green;
+    padding-top: 60px;
+    .row:nth-child(1){
+        @include green-text();
+        .devider{
+            background-color: $dark-green;
+        }
+    }
+    .row{
+        color: white;
+    }
+    .row:nth-child(2){
+        padding-top: 60px;
+    }
+    .team-photo{
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        overflow: hidden;
+        background-color: white;
+    }
+    .timeline{
+        width: 2px;
+        height: 77px;
+        padding-top: 10px;
+        margin-top: 10px;
+        // margin-bottom: 10px;
+        // margin: 0 auto;
+        background-color: $dark-green;
+    }
+    .team-links{
+        border-radius: 30px;
+        background-color: white;
+        margin-bottom: 20px;
+        img{
+            padding: 3px;
+        }
+    }
+}
+
+.work-with-us{
+    background-color: $dark-green;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    button{
+        @include btn(10px, 25px, $green);
+        color: white;
+        box-shadow: 0 0 100px rgba(0,0,0,0.3);
+    }
+}
+
+.info{
+    background-color: $dark;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include white-text();
+    .team-links{
+        border-radius: 30px;
+        background-color: white;
+        margin-bottom: 20px;
+        img{
+            padding: 3px;
+        }
+    }
+}
+
+.about-us{
+    padding: 0 25px;
+    p{
+        margin-top: 20px;
+    }
+}
+
+.items{
+    margin-top: 20px;
+    .recent-photo{
+        width: 53px;
+        height: 53px;
+        overflow: hidden;
+        border-radius: 2px;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    .item-1{
+        margin-bottom: 10px;
+        .description{
+            margin-left: 5px;
+        }
+    }
+}
+
+
+.contact-us{
+    p{
+        padding: 0 100px;
+    }
+
+    input{
+        width: 322px;
+        background-color: $light-dark;
+        color: gray;
+        padding: 5px 15px;
+        border: none;
+        outline: none;
+        &:nth-child(1){
+            border-radius: 5px 5px 0 0;
+        }
+    }
+    textarea{
+        width: 322px;
+        height: 130px;
+        resize: none;
+        background-color: $light-dark;
+        color: gray;
+        padding: 5px 15px;
+        border: none;
+        outline: none;
+    }
+    button{
+        width: 322px;
+        background-color: $dark-green;
+        color: white;
+        border-radius: 0 0 5px 5px;
+        border: none;
+        padding: 5px 0;
+    }
+}
+
+.green-label{
+    @include label($green);
+}
+
+.orange-label{
+    @include label(#ffba00);
+}
+
+.blue-label{
+    @include label(#089dea);
+}
+
+.red-label{
+    @include label(#f34d04);
+}
+
+.channels{
+    background-color: $dark-black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .row:nth-child(1){
+        margin-bottom: 25px;
+    }
+    h3{
+        color: #111111;
+    }
+    .devider{
+        background-color: #111111;
+        // margin-bottom: 25px;
+    }
+    img{
+        margin-bottom: 10px;
+    }
+}
+
+footer{
+    background-color: black;
+    padding-top: 10px;
+    p{
+        color: white;
+        margin-bottom: 5px;
+    }
+}
