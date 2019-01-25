@@ -1,0 +1,354 @@
+$yellow: #fed136;
+$light-gray: #f7f7f7;
+
+@mixin btn {
+    background-color: $yellow;
+    padding: 20px 60px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    &:hover{
+        transition: 0.3s;
+        background-color: #feba2b;
+    }
+    &:not(:hover){
+        transition: 0.3s;
+        background-color: $yellow;
+    }
+}
+
+
+header{
+    background: url("images/background.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    // height: 500px;
+}
+
+.menu{
+    padding-top: 2rem;
+    .nav-link{
+        color: white;
+        padding-left: 2.5rem;
+        border-top: 3px solid transparent;
+        &:hover{
+            transition: 0.3s;
+            border-top: 3px solid $yellow;
+        }
+        &:not(:hover){
+            transition: 0.3s;
+            border-top: 3px solid transparent;
+        }
+    }
+    a{
+        padding-left: 2.5rem;
+        font-size: 20px;
+    }
+    img{
+        
+    }
+    .nav-item{
+        padding-left: 40px;
+    }
+}
+
+.welcome{
+    padding-top: 13rem;
+    padding-bottom: 10rem;
+    h1, h2{
+        color: white;
+    }
+    button{
+        @include btn();
+        margin-top: 4.5rem;
+    }
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+article{
+    padding-top: 7rem;
+    padding-bottom: 6.3rem;
+}
+.service{
+    padding-top: 4rem;
+    img{
+        animation: imgrotate 3s infinite;
+        animation-delay: 1s;
+        animation-direction: alternate;
+        // &:hover{
+        //     animation: imgrotate 3s infinite;
+        // }
+    }
+}
+
+
+
+.portfolio{
+    background-color: $light-gray;
+    padding-top: 7rem;
+    padding-bottom: 7.5rem;
+}
+
+.glr-photos{
+    padding-top: 4rem;
+}
+.glr-content{
+    background-color: white;
+    width: 290px;
+    margin-top: 3.125rem;
+    
+    .glr-img{
+        overflow: hidden;
+        width: 290px;
+    }
+    .glr-text{
+        padding-top: 1rem;
+        padding-bottom: 0.3rem;
+        p{
+            padding-top: 0;
+        }
+        h4{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about-us{
+    // height: 600px;
+    padding-top: 7rem;
+}
+
+.timeline{
+    position: relative;
+}
+
+.timestick{
+    position: relative;
+    width: 5px;
+    height: 900px;
+    background-color: $light-gray;
+    .point{
+        width: 5px;
+        height: 5px;
+        background-color: black;
+        position: absolute;
+        animation: pointrun 20s infinite;
+    }
+}
+
+.text{
+    position: absolute;
+    top: 0;
+    left: -500px;
+    text-align: end;
+    width: 400px;
+}
+
+.text-2{
+    position: absolute;
+    top: 290px;
+    right: -500px;
+    text-align: start;
+    width: 400px;
+}
+
+.text-3{
+    position: absolute;
+    top: 580px;
+    left: -500px;
+    text-align: end;
+    width: 400px;
+}
+
+.time-img{
+    width: 185px;
+    height: 185px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid $light-gray;
+    z-index: 2;
+    position: absolute;
+    right: -90px;
+    top: -1px;
+    background-color: $light-gray;
+    animation: img-1 5s infinite;
+    img{
+        width: 290px;
+    }
+}
+
+
+.time-img-2{
+    width: 185px;
+    height: 185px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid $light-gray;
+    z-index: 2;
+    position: absolute;
+    right: -90px;
+    top: 290px;
+    background-color: $light-gray;
+    img{
+        width: 290px;
+    }
+}
+
+.time-img-3{
+    width: 185px;
+    height: 185px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid $light-gray;
+    z-index: 2;
+    position: absolute;
+    right: -90px;
+    top: 580px;
+    background-color: $light-gray;
+    img{
+        width: 290px;
+    }
+}
+
+.team{
+    background-color: $light-gray;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    .team-photo{
+        width: 220px;
+        height: 220px;
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    .team-content{
+        padding-bottom: 3.375rem;
+        padding-top: 5rem;
+        .col{
+            padding-top: 2rem;
+        }
+    }
+
+    .team-text{
+        padding-top: 1.625rem;
+        h5{
+            margin-bottom: 0;
+        }
+    }
+
+    .team-social{
+        a{
+            outline: none;
+            text-decoration: none;
+        }
+    }
+    .social-icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 3px solid black;
+        margin-right: 0.625rem; 
+        i{
+            color: black;
+        }
+    }
+}
+
+
+
+.logos{
+    padding-top: 3.75rem;
+    padding-bottom: 2rem;
+
+}
+
+.contact-us{
+    padding-top: 7rem;
+    background: url("images/background-2.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact{
+    input{
+        width: 100%;
+        margin-bottom: 1.875rem;
+        padding: 15px;
+        border-radius: 3px;
+        border: none;
+    }
+    textarea{
+        resize: none;
+        width: 100%;
+        height: 223px;
+        padding: 15px;
+        border-radius: 3px;
+        border: none;
+    }
+
+    button{
+        @include btn();
+        margin-bottom: 6rem;
+    }
+    
+}
+
+.contact-text{
+    padding-bottom: 5rem;
+    h2{
+        color: white;
+    }
+    p{
+        color: white;
+    }
+}
+
+footer{
+    background-color: white;
+    padding-top: 1.875rem;
+    padding-bottom: 1rem;
+
+    .social-icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 3px solid black;
+        background-color: black;
+        margin-right: 0.625rem; 
+        i{
+            color: white;
+        }
+    }
+    .footer-social{
+        a{
+            outline: none;
+            text-decoration: none;
+        }
+    }
+
+}
+
+@keyframes imgrotate{
+    0% {transform: rotate(0deg);}
+    // 50% {transform: rotate(240deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes pointrun{
+    0% {top: 0;}
+    100% {top: 900px;}
+}
+
+@keyframes img-1{
+    0% {border: 5px solid $light-gray;}
+    25% {border: 6px solid #bebebe;}
+    50% {border: 8px solid #bebebe;}
+    75% {border: 9px solid #bebebe;}
+    100% {border: 5px solid $light-gray;}
+    
+}
