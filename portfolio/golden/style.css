@@ -1,3 +1,9 @@
+#menuButton {
+  background-color: transparent;
+  color: #fed136;
+  border: none;
+  font-size: 1.6rem; }
+
 header {
   background: url("images/background.jpg") no-repeat center;
   background-size: cover;

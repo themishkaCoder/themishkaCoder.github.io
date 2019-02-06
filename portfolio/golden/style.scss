@@ -19,6 +19,14 @@ $light-gray: #f7f7f7;
     }
 }
 
+#menuButton{
+    background-color: transparent;
+    color: $yellow;
+    border: none;
+    font-size: 1.6rem;
+    //outline: none;
+    // width: 25px;
+}
 
 header{
     background: url("images/background.jpg") no-repeat center;
@@ -46,12 +54,16 @@ header{
         padding-left: 2.5rem;
         font-size: 20px;
     }
-    img{
-        
-    }
+    
     .nav-item{
         padding-left: 40px;
     }
+
+    // button{
+    //     background-color: transparent;
+    //     color: $yellow;
+    //     border: none;
+    // }
 }
 
 .welcome{
