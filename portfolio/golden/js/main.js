@@ -12,6 +12,12 @@ function openMenu(){
     menuContent[3].className = "nav-item";
     menuContent[4].className = "nav-item";
     
+    // for(i = 0; i > 4; i++){
+    //     menuContent[i].className = "nav-item";
+    //     console.log(i + "sss");
+    // }
+
+
     menuButton.removeAttribute("onclick");
     menuButton.setAttribute("onclick", "closeMenu()");
     menuButton.innerHTML = "<i class='fas fa-chevron-circle-down'></i>";

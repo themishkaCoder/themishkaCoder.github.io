@@ -97,7 +97,8 @@ article {
       margin-bottom: 0; }
 
 .about-us {
-  padding-top: 7rem; }
+  padding-top: 7rem;
+  padding-bottom: 7rem; }
 
 .timeline {
   position: relative; }
@@ -116,25 +117,7 @@ article {
     animation: pointrun 20s infinite; }
 
 .text {
-  position: absolute;
-  top: 0;
-  left: -500px;
-  text-align: end;
-  width: 400px; }
-
-.text-2 {
-  position: absolute;
-  top: 290px;
-  right: -500px;
-  text-align: start;
-  width: 400px; }
-
-.text-3 {
-  position: absolute;
-  top: 580px;
-  left: -500px;
-  text-align: end;
-  width: 400px; }
+  text-align: end; }
 
 .time-img {
   width: 185px;
@@ -143,41 +126,15 @@ article {
   border-radius: 50%;
   border: 5px solid #f7f7f7;
   z-index: 2;
-  position: absolute;
-  right: -90px;
-  top: -1px;
-  background-color: #f7f7f7;
-  -webkit-animation: img-1 5s infinite;
-  animation: img-1 5s infinite; }
+  background-color: #f7f7f7; }
+  .time-img::after {
+    content: "";
+    width: 5px;
+    height: 200px;
+    background-color: gray;
+    z-index: 4;
+    text-align: center; }
   .time-img img {
-    width: 290px; }
-
-.time-img-2 {
-  width: 185px;
-  height: 185px;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 5px solid #f7f7f7;
-  z-index: 2;
-  position: absolute;
-  right: -90px;
-  top: 290px;
-  background-color: #f7f7f7; }
-  .time-img-2 img {
-    width: 290px; }
-
-.time-img-3 {
-  width: 185px;
-  height: 185px;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 5px solid #f7f7f7;
-  z-index: 2;
-  position: absolute;
-  right: -90px;
-  top: 580px;
-  background-color: #f7f7f7; }
-  .time-img-3 img {
     width: 290px; }
 
 .team {

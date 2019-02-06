@@ -133,6 +133,7 @@ article{
 .about-us{
     // height: 600px;
     padding-top: 7rem;
+    padding-bottom: 7rem;
 }
 
 .timeline{
@@ -154,27 +155,7 @@ article{
 }
 
 .text{
-    position: absolute;
-    top: 0;
-    left: -500px;
     text-align: end;
-    width: 400px;
-}
-
-.text-2{
-    position: absolute;
-    top: 290px;
-    right: -500px;
-    text-align: start;
-    width: 400px;
-}
-
-.text-3{
-    position: absolute;
-    top: 580px;
-    left: -500px;
-    text-align: end;
-    width: 400px;
 }
 
 .time-img{
@@ -184,48 +165,24 @@ article{
     border-radius: 50%;
     border: 5px solid $light-gray;
     z-index: 2;
-    position: absolute;
-    right: -90px;
-    top: -1px;
     background-color: $light-gray;
-    animation: img-1 5s infinite;
+    
+    &::after{
+        content: "";
+        width: 5px;
+        height: 200px;
+        background-color: gray;
+        z-index: 4;
+        text-align: center;
+    }
+
     img{
         width: 290px;
     }
 }
 
 
-.time-img-2{
-    width: 185px;
-    height: 185px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 5px solid $light-gray;
-    z-index: 2;
-    position: absolute;
-    right: -90px;
-    top: 290px;
-    background-color: $light-gray;
-    img{
-        width: 290px;
-    }
-}
 
-.time-img-3{
-    width: 185px;
-    height: 185px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 5px solid $light-gray;
-    z-index: 2;
-    position: absolute;
-    right: -90px;
-    top: 580px;
-    background-color: $light-gray;
-    img{
-        width: 290px;
-    }
-}
 
 .team{
     background-color: $light-gray;
