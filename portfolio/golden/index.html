@@ -7,15 +7,17 @@
     <title>Golden</title>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/hover.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     
     <header>
         <div class="container">
-            <div class="menu">
+            <div class="menu wow bounceInDown">
                 <nav class="navbar navbar-expand-lg">
                     <div class="navbar-collapse" id="navbarSupportedContent">
                         <div class="container">
@@ -58,14 +60,14 @@
 
             <div class="welcome text-center">
                 <div class="row">
-                    <div class="col">
+                    <div class="col wow bounceInDown">
                         <h2>Welcome To Our Studio!</h2>
                         <h1>IT'S NICE TO MEET YOU</h1>
                     </div>
                 </div>
                 
                 <div class="row">
-                    <div class="col">
+                    <div class="col wow bounceInUp">
                         <button>TELL ME MORE</button>
                     </div>
                 </div>
@@ -77,39 +79,43 @@
     <article>
       <div class="container">
         <div class="row">
-          <div class="col text-center">
-            <h2 class="bold-text">SERVICES</h2>
-            <p>Proin iaculis purus consequat sem cure</p>
+          <div class="col text-center wow bounceIn">
+            <h2 class="bold-text">Мои услуги</h2>
+            <p>Я предоставляю такие услуги как:</p>
           </div>
         </div>
 
         <div class="service">
           <div class="row">
 
-            <div class="col-md-12 col-lg-4 text-center">
-              <img src="images/1.png" alt="">
-              <h3>E-Commerce</h3>
-              <p>Proin iaculis purus consequat sem cure 
-                digni ssim. Donec porttitora entum suscipit 
-                aenean rhoncus posuere odio in tincidunt.
+            <div class="col-md-12 col-lg-4 text-center wow bounceInLeft">
+              <div class="serviceIcon d-flex justify-content-center align-items-center m-auto">
+                <i class="fab fa-html5"></i>
+              </div>
+              <!-- <img src="images/1.png" alt=""> -->
+              <h3>Верстка страничек</h3>
+              <p>Легко сверстаю страничку на HTML/CSS с помощю Bootstrap 3, Bootstrap 4, Flexbox, Grid. 
               </p>
             </div>
 
-            <div class="col-md-12 col-lg-4 text-center">
-              <img src="images/1.png" alt="">
-              <h3>E-Commerce</h3>
-              <p>Proin iaculis purus consequat sem cure 
-                digni ssim. Donec porttitora entum suscipit 
-                aenean rhoncus posuere odio in tincidunt.
+            <div class="col-md-12 col-lg-4 text-center wow bounceInDown">
+              <div class="serviceIcon d-flex justify-content-center align-items-center m-auto">
+                <i class="fab fa-wordpress"></i>
+              </div>
+              <!-- <img src="images/1.png" alt=""> -->
+              <h3>Установка/настройка CMS</h3>
+              <p>Могу поставить на хостинг и настроить такие CMS как - WordPress, OpenCart.
               </p>
             </div>
 
-            <div class="col-md-12 col-lg-4 text-center">
-              <img src="images/1.png" alt="">
-              <h3>E-Commerce</h3>
-              <p>Proin iaculis purus consequat sem cure 
-                digni ssim. Donec porttitora entum suscipit 
-                aenean rhoncus posuere odio in tincidunt.
+            <div class="col-md-12 col-lg-4 text-center wow bounceInRight">
+              <div class="serviceIcon d-flex justify-content-center align-items-center m-auto">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <!-- <img src="images/1.png" alt=""> -->
+              <h3>Правки HTML и CSS</h3>
+              <p>
+                Могу пофиксить или улучшить HTML/CSS документ, переделать под новый дизайн.
               </p>
             </div>
 
@@ -123,39 +129,51 @@
         <div class="container">
           <div class="row">
             <div class="col text-center">
-              <h2 class="bold-text">OUR PORTFOLIO</h2>
-              <p>Proin iaculis purus consequat sem cure.</p>
+              <h2 class="bold-text">МОЕ ПОРТФОЛИО</h2>
+              <p>Здесь собраны все мои работы которые я когда-либо делал.</p>
             </div>
           </div>
 
           <div class="glr-photos">
             <div class="row">
               <div class="col-12 col-md-6 col-lg-4 text-center d-flex justify-content-center">
-                <div class="glr-content hvr-float-shadow">
-                  <div class="glr-img hvr-grow-rotate"><img src="images/port/1.jpg" alt=""></div>
+                <div class="glr-content hvr-float-shadow wow jackInTheBox">
+                  <div class="glr-img hvr-grow-rotate">
+                    <a href="https://themishkacoder.github.io/portfolio/freebie/" target="_blank">
+                      <img src="images/port/freebie.jpg" alt="">
+                    </a>
+                  </div>
                   <div class="glr-text">
-                    <h4>Ebony & Ivory</h4>
-                    <p>Branding</p>
+                    <h4>Freebie</h4>
+                    <p>Страничка создана с помощю <br> FlexBox</p>
                   </div>
                 </div>
               </div>
 
               <div class="col-12 col-md-6 col-lg-4 text-center text-center d-flex justify-content-center">
-                <div class="glr-content hvr-float-shadow">
-                  <div class="glr-img hvr-grow-rotate"><img src="images/port/1.jpg" alt=""></div>
+                <div class="glr-content hvr-float-shadow wow jackInTheBox">
+                  <div class="glr-img hvr-grow-rotate">
+                    <a href="https://themishkacoder.github.io/portfolio/news/" target="_blank">
+                      <img src="images/port/news.jpg" alt="">
+                    </a>
+                  </div>
                   <div class="glr-text">
-                    <h4>Ebony & Ivory</h4>
-                    <p>Branding</p>
+                    <h4>Новостной сайт</h4>
+                    <p>Создан при помощи <br> Bootstrap 3</p>
                   </div>
                 </div>
               </div>
 
               <div class="col-12 col-lg-4 text-center text-center d-flex justify-content-center">
-                <div class="glr-content hvr-float-shadow">
-                  <div class="glr-img hvr-grow-rotate"><img src="images/port/1.jpg" alt=""></div>
+                <div class="glr-content hvr-float-shadow wow jackInTheBox">
+                  <div class="glr-img hvr-grow-rotate">
+                    <a href="https://themishkacoder.github.io/portfolio/switch/" target="_blank">
+                      <img src="images/port/switch.jpg" alt="">
+                    </a>
+                  </div>
                   <div class="glr-text">
-                    <h4>Ebony & Ivory</h4>
-                    <p>Branding</p>
+                    <h4>Switch</h4>
+                    <p>Создан с помощю <br> Bootstrap 4</p>
                   </div>
                 </div>
               </div>
@@ -163,31 +181,43 @@
               
 
               <div class="col-12 col-md-6 col-lg-4 text-center d-flex justify-content-center">
-                <div class="glr-content hvr-float-shadow">
-                  <div class="glr-img hvr-grow-rotate"><img src="images/port/1.jpg" alt=""></div>
+                <div class="glr-content hvr-float-shadow wow jackInTheBox">
+                  <div class="glr-img hvr-grow-rotate">
+                    <a href="https://themishkacoder.github.io/portfolio/example2/" target="_blank">
+                      <img src="images/port/freebie2.jpg" alt="">
+                    </a>
+                  </div>
                   <div class="glr-text">
-                    <h4>Ebony & Ivory</h4>
-                    <p>Branding</p>
+                    <h4>Old Freebie</h4>
+                    <p>Моя первая страница сделана на FlexBox и Grid</p>
                   </div>
                 </div>
               </div>
 
               <div class="col-12 col-md-6 col-lg-4 text-center text-center d-flex justify-content-center">
-                <div class="glr-content hvr-float-shadow">
-                  <div class="glr-img hvr-grow-rotate"><img src="images/port/1.jpg" alt=""></div>
+                <div class="glr-content hvr-float-shadow wow jackInTheBox">
+                  <div class="glr-img hvr-grow-rotate">
+                    <a href="https://themishkacoder.github.io/portfolio/Autistic/" target="_blank">
+                      <img src="images/port/autistic.jpg" alt="">
+                    </a>
+                  </div>
                   <div class="glr-text">
-                    <h4>Ebony & Ivory</h4>
-                    <p>Branding</p>
+                    <h4>Autistic</h4>
+                    <p>Страница создана на <br> Float</p>
                   </div>
                 </div>
               </div>
 
               <div class="col-12 col-lg-4 text-center text-center d-flex justify-content-center">
-                <div class="glr-content hvr-float-shadow">
-                  <div class="glr-img hvr-grow-rotate"><img src="images/port/1.jpg" alt=""></div>
+                <div class="glr-content hvr-float-shadow wow jackInTheBox">
+                  <div class="glr-img hvr-grow-rotate">
+                    <a href="https://themishkacoder.github.io/portfolio/Menu/" target="_blank">
+                      <img src="images/port/menu.jpg" alt="">
+                    </a>
+                  </div>
                   <div class="glr-text">
-                    <h4>Ebony & Ivory</h4>
-                    <p>Branding</p>
+                    <h4>Restaurant Menu</h4>
+                    <p>Моя первая страница создана при помощи Float</p>
                   </div>
                 </div>
               </div>
@@ -232,15 +262,15 @@
 
 
 
-    <section class="about-us">
+    <section class="about-us wow rotateInUpLeft">
       <div class="container">
         <div class="row">
-          <div class="col text-center">
-            <h2>About Us</h2>
+          <div class="col text-center pb-5">
+            <h2>About Me</h2>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row pb-5">
           <div class="col d-none d-xl-block">
             <div class="text">
                 <h3>July 2010 <br>
@@ -280,7 +310,7 @@
         </div>
 
 
-        <div class="row">
+        <div class="row pb-5">
           <div class="col d-none d-xl-block">
             
           </div>
@@ -310,7 +340,7 @@
 
 
 
-        <div class="row">
+        <div class="row pb-5">
           <div class="col d-none d-xl-block">
             <div class="text">
                 <h3>July 2010 <br>
@@ -385,19 +415,19 @@
     <section class="team">
       <div class="container">
         <div class="row">
-          <div class="col text-center">
-            <h2 class="bold-text">OUR AMAZING TEAM</h2>
-            <p>Proin iaculis purus consequat sem cure.</p>
+          <div class="col text-center wow bounceInDown">
+            <h2 class="bold-text">МОЯ СУПЕР КОМАНДА</h2>
+            <p>Я, я иии я!)))</p>
           </div>
         </div>
 
         <div class="team-content">
           <div class="row">
-            <div class="col d-flex flex-column justify-content-center">
-              <div class="team-photo m-auto hvr-wobble-skew"><img src="" alt=""></div>
+            <div class="col d-flex flex-column justify-content-center wow bounceInLeft">
+              <div class="team-photo m-auto hvr-wobble-skew"><img src="images/m3.jpg" alt=""></div>
               <div class="team-text text-center">
-                <h5>Kimberly Thompson</h5>
-                <p>Marketer</p>
+                <h5>Mihail Tomoshenko</h5>
+                <p>Frontend</p>
               </div>
               <div class="team-social d-flex flex-row justify-content-center">
                 <a href="">
@@ -410,9 +440,9 @@
                     <i class="fab fa-facebook-f"></i>
                   </div>
                 </a>
-                <a href="">
+                <a href="https://github.com/themishkaCoder">
                   <div class="social-icon d-flex justify-content-center align-items-center hvr-bounce-in">
-                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-github"></i>
                   </div>
                 </a>
               </div>
@@ -420,11 +450,11 @@
 
 
 
-            <div class="col d-flex flex-column justify-content-center">
-              <div class="team-photo m-auto hvr-wobble-skew"><img src="" alt=""></div>
+            <div class="col d-flex flex-column justify-content-center wow bounceIn">
+              <div class="team-photo m-auto hvr-wobble-skew"><img src="images/m2.jpg" alt=""></div>
               <div class="team-text text-center">
-                <h5>Kimberly Thompson</h5>
-                <p>Marketer</p>
+                <h5>Mihail Tomoshenko</h5>
+                <p>Web Developer</p>
               </div>
               <div class="team-social d-flex flex-row justify-content-center">
                 <a href="">
@@ -432,25 +462,25 @@
                     <i class="fab fa-twitter"></i>
                   </div>
                 </a>
-                <a href="">
+                <a href="https://www.facebook.com/profile.php?id=100008492881355">
                   <div class="social-icon d-flex justify-content-center align-items-center hvr-bounce-in">
                     <i class="fab fa-facebook-f"></i>
                   </div>
                 </a>
-                <a href="">
+                <a href="https://github.com/themishkaCoder">
                   <div class="social-icon d-flex justify-content-center align-items-center hvr-bounce-in">
-                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-github"></i>
                   </div>
                 </a>
               </div>
             </div>
 
 
-            <div class="col d-flex flex-column justify-content-center">
-              <div class="team-photo m-auto hvr-wobble-skew"><img src="" alt=""></div>
+            <div class="col d-flex flex-column justify-content-center wow bounceInRight">
+              <div class="team-photo m-auto hvr-wobble-skew"><img src="images/m4.jpg" alt=""></div>
               <div class="team-text text-center m-auto">
-                <h5>Kimberly Thompson</h5>
-                <p>Marketer</p>
+                <h5>Mihail Tomoshenko</h5>
+                <p>Backend</p>
               </div>
               <div class="team-social d-flex flex-row justify-content-center">
                 <a href="">
@@ -463,9 +493,9 @@
                     <i class="fab fa-facebook-f"></i>
                   </div>
                 </a>
-                <a href="">
+                <a href="https://github.com/themishkaCoder">
                   <div class="social-icon d-flex justify-content-center align-items-center hvr-bounce-in">
-                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-github"></i>
                   </div>
                 </a>
               </div>
@@ -474,7 +504,7 @@
         </div>
 
         <div class="row">
-          <div class="col text-center">
+          <div class="col text-center d-none">
             <p>Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit <br>  
                 aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
           </div>
@@ -510,27 +540,27 @@
         <div class="row">
           <div class="col text-center">
             <div class="contact-text">
-              <h2>CONTACT US</h2>
-              <p>Proin iaculis purus consequat sem cure.</p>
+              <h2>КОНТАКТ СО МНОЙ</h2>
+              <p>Здесь ты можешь написать мне.</p>
             </div>
           </div>
         </div>
 
         <div class="contact">
           <div class="row">
-            <div class="col-6">
+            <div class="col-6 wow wobble">
                 <input type="text" placeholder="YOUR NAME*"> 
                 <input type="text" placeholder="YOUR E-MAIL*">
                 <input type="text" placeholder="SUBJECT">
               </div>
         
-              <div class="col-6">
+              <div class="col-6 wow wobble">
                 <textarea name="" id="" cols="30" rows="10" placeholder="YOUR MESSAGE*"></textarea>
               </div>
           </div>
 
           <div class="row">
-            <div class="col text-center">
+            <div class="col text-center wow bounceIn">
               <button>SEND MESSAGE</button>
             </div>
           </div>
@@ -543,11 +573,11 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-4">
-            <p>© Copyright 2014 FreebiesXpress.com</p>
+          <div class="col-4 wow bounceInLeft">
+            <p>© Copyright 2019 themishkaCoder</p>
           </div>
 
-          <div class="col-8">
+          <div class="col-8 wow bounceInRight">
             <div class="footer-social d-flex flex-row justify-content-center">
                 <a href="">
                   <div class="social-icon d-flex justify-content-center align-items-center hvr-buzz-out">
@@ -559,9 +589,9 @@
                     <i class="fab fa-facebook-f"></i>
                   </div>
                 </a>
-                <a href="">
+                <a href="https://github.com/themishkaCoder">
                   <div class="social-icon d-flex justify-content-center align-items-center hvr-buzz-out">
-                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-github"></i>
                   </div>
                 </a>
 
@@ -583,5 +613,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+      <script>
+      new WOW().init();
+    </script>
 </body>
 </html>

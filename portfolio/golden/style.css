@@ -73,6 +73,21 @@ article {
     -webkit-animation-direction: alternate;
     animation-direction: alternate; }
 
+.serviceIcon {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  border: 4px solid #fed136; }
+  .serviceIcon i {
+    color: #fed136;
+    font-size: 3rem;
+    -webkit-animation: imgrotate 3s infinite;
+    animation: imgrotate 3s infinite;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; }
+
 .portfolio {
   background-color: #f7f7f7;
   padding-top: 7rem;
@@ -145,7 +160,8 @@ article {
     width: 220px;
     height: 220px;
     background-color: black;
-    border-radius: 50%; }
+    border-radius: 50%;
+    overflow: hidden; }
   .team .team-content {
     padding-bottom: 3.375rem;
     padding-top: 5rem; }
