@@ -546,27 +546,30 @@
             </div>
           </div>
         </div>
-
+        <form action="mail.php" method="POST">
         <div class="contact">
           <div class="row">
+            
             <div class="col-6 wow wobble">
-                <input type="text" placeholder="YOUR NAME*"> 
-                <input type="text" placeholder="YOUR E-MAIL*">
-                <input type="text" placeholder="SUBJECT">
+                <input type="text" placeholder="YOUR NAME*" name="user_name"> 
+                <input type="text" placeholder="YOUR E-MAIL*" name="user_email">
+                <input type="text" placeholder="SUBJECT" name="user_subject">
               </div>
         
               <div class="col-6 wow wobble">
-                <textarea name="" id="" cols="30" rows="10" placeholder="YOUR MESSAGE*"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="YOUR MESSAGE*" name="user_message"></textarea>
               </div>
           </div>
 
           <div class="row">
             <div class="col text-center wow bounceIn">
-              <button>SEND MESSAGE</button>
+              <button type="submit">SEND MESSAGE</button>
             </div>
           </div>
-        </div>
+
         
+        </div>
+      </form>
       </div>
     </section>
 

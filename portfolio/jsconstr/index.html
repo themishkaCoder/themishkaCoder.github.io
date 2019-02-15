@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>Пользовательский конструктор 2</title>
+
+    <script type="text/javascript">
+
+        // Функция-конструктор для создания объектов Human.
+
+        function Creature(name) {
+            // свойство
+            this.firstName = name;
+
+            // метод - свойство объекта, которое содежит значение в виде функции.
+            // this.talk = function(){
+
+            // }
+
+            this.talk = function () {
+                document.write("Hello! My name is " + this.firstName + "<br /> ");
+            }
+
+            this.move = function(){
+                document.write("This animal move " + this.firstName + "<br /> ");
+            }
+            this.sound = function(){
+                alert("Hello! My name is " + this.firstName);
+            }
+
+            if(this.firstName == "Horse"){
+                this.sound = function(){
+                    alert("Igogogo " + this.firstName);
+                }
+            }
+
+            if(this.firstName == "Kenguru"){
+                this.sound = function(){
+                    alert("Ughghughtfh " + this.firstName);
+                }
+            }
+
+            if(this.firstName == "Pike"){
+                this.sound = function(){
+                    alert("'No sound' " + this.firstName);
+                }
+            }
+        }
+
+        // Создание двух экземпляров типа Human
+
+        // var h = new Human("Homer");
+        // var r = new Human("Rocky");
+
+        var horse = new Creature("Horse");
+        var ken = new Creature("Kenguru");
+        var pike = new Creature("Pike");
+
+        // var car = new Car(4, 'green', 'Audi')
+        console.log(Creature);
+        console.log(horse);
+        
+        // Вызов метода SayHello() на созданых обьектах. 
+        horse.talk();
+        ken.talk();
+
+        ken.move();
+
+        horse.move();
+
+        horse.sound();
+        ken.sound();
+        pike.sound();
+
+        //ken.sound();
+    </script>
+
+</head>
+<body>
+</body>
+</html>
