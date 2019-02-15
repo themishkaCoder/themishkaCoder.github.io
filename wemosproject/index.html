@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SmartHouse Admin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        .fan{
+            width: 100%;
+        }
+
+        #menuButton{
+            border: none;
+            background-color: transparent;
+            font-size: 1.5rem;
+            outline: none;
+            color: white;
+            
+        }
+
+        #on-off{
+            background-color: transparent;
+            font-size: 2rem;
+            outline: none;
+            border: none;
+
+        }
+        header{
+            background: url("http://www.gandex.ru/upl/oboi/u11307_9546_20101023014.jpg") no-repeat center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 400px;
+            
+        }
+        h1{
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+        <!-- <i class="fas fa-chevron-circle-down"></i> -->
+    <header>
+        <div class="container-fluid pt-5">
+            <div class="row pt-5">
+                <div class="col"></div>
+                <div class="col-8 text-center">
+                    <h1>Вітаю вас у керуванні вашого будинку</h1>
+                </div>
+                <div class="col text-center">
+                    <button id="menuButton" class="mt-3"><i class="fas fa-bars"></i></button>
+                    <ul class="list-group" id="menuList">
+                        <li class="list-group-item"><a href="">Світло</a></li>
+                        <li class="list-group-item"><a href="">Гараж</a></li>
+                        <li class="list-group-item"><a href="">Чайник</a></li>
+                        <li class="list-group-item"><a href="">Світло в залі</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <article>
+        <div class="container pt-5">
+            <div class="row pt-5">
+                <div class="col">
+                    <img src="https://png.pngtree.com/element_origin_min_pic/17/09/26/49f71a677da6c390bacda7c0a75e4a85.jpg" alt="" class="fan">
+                </div>
+                <div class="col-8 text-center">
+                    <h2>Керування гвинтокрилом</h2>
+                </div>
+                <div class="col">
+                    <img src="https://png.pngtree.com/element_origin_min_pic/17/09/26/49f71a677da6c390bacda7c0a75e4a85.jpg" alt="" class="fan">
+                </div>
+            </div>
+
+            <div class="row">
+                
+                <div class="col-12 text-center">
+                    <h4>Старт/Стоп</h4>
+                </div>
+
+                <div class="col pt-4 text-center">
+                    <button id="on-off"><i class="fas fa-toggle-on"></i></button>
+                    <!-- <button><i class="fas fa-toggle-off"></i></button> -->
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        $("#menuList").hide();
+
+        $("#menuButton").click(function(){
+            $("#menuList").slideToggle();
+            //$("#menuList").scrollLeft();
+        })
+
+        $("article").click(function(){
+            $("#menuList").slideUp();
+        })
+        
+    </script>
+</body>
+</html>
