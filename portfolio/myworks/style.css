@@ -1,0 +1,92 @@
+.menu {
+  background-color: black; }
+  .menu button {
+    background-color: transparent;
+    border: none; }
+    .menu button i {
+      color: white;
+      font-size: 2rem; }
+
+.navMenu button {
+  background-color: transparent;
+  border: none; }
+  .navMenu button i {
+    font-size: 2rem; }
+
+.mainNav p {
+  margin-bottom: 0.1rem; }
+
+#vertText {
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  -webkit-transform: scale(-1, -1);
+  -ms-transform: scale(-1, -1);
+  transform: scale(-1, -1); }
+
+.works .photo {
+  width: 400px;
+  height: 400px;
+  overflow: hidden; }
+
+footer p {
+  font-size: 0.8rem;
+  color: gray; }
+
+footer i {
+  font-size: 2rem;
+  color: gray; }
+
+.menuList {
+  background-color: white;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3; }
+  .menuList ul {
+    padding-top: 3rem; }
+  .menuList a {
+    color: black; }
+    .menuList a h5 {
+      margin-bottom: 0;
+      padding-bottom: 0; }
+
+.close button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  outline: none; }
+
+.filterList {
+  background-color: #222222;
+  width: 400px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  -webkit-box-shadow: 94px 0px 235px black;
+  box-shadow: 94px 0px 235px black; }
+  .filterList a {
+    color: #999999;
+    outline: none;
+    border: none;
+    padding-left: 1rem; }
+    .filterList a p {
+      padding-left: 2rem; }
+    .filterList a:hover {
+      color: white; }
+    .filterList a h5 {
+      margin-bottom: 0;
+      padding-bottom: 0; }
+
+.closeFilter i {
+  color: white; }
+
+.closeFilter button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  outline: none; }
