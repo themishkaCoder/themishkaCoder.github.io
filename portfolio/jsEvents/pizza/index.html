@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style media="screen">
+      .error{
+        color: red;
+        font-weight: bold;
+      }
+
+      body{
+        background-image: url("pizza2.png");
+      }
+    </style>
+  </head>
+  <body class="d-flex justify-content-center">
+
+
+    <form class="text-center" action="index.html" method="post" name="pizza">
+      <h1>Заказ пиццы</h1>
+      <select class="" name="pizzaList">
+        <option value="fCheese">4 Сыра - 20грн</option>
+        <option value="gavai">Гавайская - 30грн</option>
+        <option value="barbeku">Барбекю - 40грн</option>
+      </select>
+      <h2>Размер</h2>
+
+      <label for="input">s - 10грн</label>
+      <input type="radio" name="" value="" id="s"><br><br>
+
+      <label for="input">m - 20грн</label>
+      <input type="radio" name="" value="" id="m"><br><br>
+
+      <label for="input">x - 30грн</label>
+      <input type="radio" name="" value="1" id="x"><br><br>
+
+      <h2>Добавки</h2>
+
+      <label for="input">Грибы - 20грн</label>
+      <input type="radio" name="" value="" id="mush"><br><br>
+
+      <label for="input">Сыр - 25грн</label>
+      <input type="radio" name="" value="" id="ch"><br><br>
+
+      <label for="input">Бекон - 35грн</label>
+      <input type="radio" name="" value="1" id="meat"><br><br>
+
+      <h2>Доставка</h2>
+
+      <label for="input">Курьер - 40грн</label>
+      <input type="radio" name="" value="1" id="courier">
+
+      <label for="input">Сомовывоз - 0грн</label>
+      <input type="radio" name="" value="1" id="pickup">
+
+
+      <p id="sum" class=""></p>
+      <button type="reset" name="button" id="reset">Очистить</button>
+      <button type="button" name="button" id="buy">Заказать</button>
+    </form>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
