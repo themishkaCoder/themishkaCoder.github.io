@@ -1,0 +1,26 @@
+.login {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; }
+  .login button {
+    color: #2EE400;
+    background-color: #2E2E2E;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 2px; }
+  .login input {
+    color: #2EE400;
+    background-color: #2E2E2E;
+    border: none;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    border-radius: 2px; }
+
+article {
+  margin-top: 20%;
+  width: 300px; }
