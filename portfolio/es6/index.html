@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ES6</title>
+</head>
+<body>
+    <div class="bez">
+
+    </div>
+
+
+    <div class="iz">
+
+    </div>
+
+    <p class="test"></p>
+    <p class="test"></p>
+    <p class="test"></p>
+    <p class="test"></p>
+    <p class="test"></p>
+
+
+
+    <script>
+        var es = "es6";
+        var a = "Без " + es + ".";
+        var bez = document.getElementById("bez");
+        var iz = document.getElementById("iz");
+        var array = document.getElementsByClassName("test");
+
+        // bez.innerText= a;
+
+        const template = `
+            <h2>С использыванием ${es} </h2>
+        `;
+
+        
+        //document.body.innerHTML = template + "\n" + a;
+
+        for(let item of array){
+            item.innerText = "Главная";
+        }
+
+        function helloName(name){
+            console.log(`<h1>Hello my name is ${name}</h1>`);
+            // return `<h1>Hello my name is ${name}</h1>`
+        }
+        helloName("Jhon");
+    </script>
+</body>
+</html>
