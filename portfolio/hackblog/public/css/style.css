@@ -10,12 +10,9 @@ body {
   width: 100%; }
 
 .logo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: logo; }
 
 .nav {
-  display: -ms-grid;
   display: grid;
   grid-template-areas: "logo . menu";
   padding: 2rem 4rem;
@@ -23,9 +20,6 @@ body {
   width: auto; }
 
 .menu {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  display: -ms-grid;
   display: grid;
   grid-area: menu;
   justify-items: end; }
@@ -46,17 +40,13 @@ article {
   background-color: grey;
   padding: 2rem 4rem;
   margin: 1rem auto;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 1fr;
   grid-template-columns: 3fr 1fr; }
   article .sidebar {
     background-color: grey;
     border-left: 10px solid #505050;
-    display: -ms-grid;
-    display: grid;
     justify-items: center;
-    align-content: flex-start;}
+    padding-left: 10px; }
     article .sidebar #onlineUserList li {
       list-style-type: none;
       padding-top: 20px;
@@ -100,11 +90,8 @@ article {
     color: #2EE400; }
 
 .chat {
-  display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
-  -webkit-box-pack: left;
-  -ms-flex-pack: left;
   justify-content: left; }
   .chat textarea {
     width: 300px;
@@ -128,15 +115,45 @@ article {
 @media (min-width: 320px) {
   .menu i {
     display: block; }
-  .menuList {
-    display: none; } }
 
+  .menuList {
+    display: none; }
+
+  .sidebar {
+    display: none; } }
 @media (min-width: 1280px) {
   .menu i {
     display: none; }
+
   .menuList {
     display: block; } }
-
-@media (min-width: 768px) and (max-width: 1920px) {
+@media (min-width: 769px) and (max-width: 1920px) {
   article {
-    width: 80%; } }
+    width: 80%; }
+
+  .sidebar {
+    display: block; } }
+@media (min-width: 320px) and (max-width: 768px) {
+  article {
+    grid-template-columns: 1fr; }
+
+  .sidebar {
+    display: none; }
+
+  .chat {
+    margin: 0 auto; }
+
+  .letters {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    justify-items: center; } }
+@media (min-width: 320px) and (max-width: 540px) {
+  .chat textarea {
+    width: 100%; }
+  .chat input {
+    width: 100%; }
+  .chat button {
+    text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */

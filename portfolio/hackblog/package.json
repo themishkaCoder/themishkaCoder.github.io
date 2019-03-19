@@ -1,6 +1,6 @@
 {
   "name": "hackblog",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "node chat",
   "main": "server.js",
   "scripts": {

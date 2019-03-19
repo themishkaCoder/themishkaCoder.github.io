@@ -6,7 +6,7 @@ const io = require("socket.io").listen(server);
 
 
 
-server.listen(3000, "192.168.88.200");
+server.listen(3000, "10.0.1.190");
 
 
 

@@ -59,8 +59,9 @@ article{
         background-color: grey;
         //margin-left: 30px;
         border-left: 10px solid #505050;
-        display: grid;
+        //display: grid;
         justify-items: center;
+        padding-left: 10px;
 
         #onlineUserList{
             li{
@@ -170,6 +171,9 @@ article{
         display: none;
     }
     
+    .sidebar{
+        display: none;
+    }
 }
 
 
@@ -177,6 +181,7 @@ article{
     // article{
     //     width: auto;
     // }
+    
 }
 
 
@@ -192,15 +197,57 @@ article{
     .menuList{
         display: block;
     }
-    
+
 }
 
 
 
-@media (min-width: 768px) and (max-width: 1920px) {
+@media (min-width: 769px) and (max-width: 1920px) {
   
     article{
         width: 80%;
+        
+    }
+    .sidebar{
+        display: block;
     }
     
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    article{
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar{
+        display: none;
+    }
+    .chat{
+        margin: 0 auto;
+    }
+    .letters{
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr;
+        justify-items: center;
+
+    }
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+    .chat{
+        textarea{
+            width: 100%;
+        }
+        input{
+            width: 100%;
+        }
+        button{
+            //width: 100%;
+            text-align: center;
+        }
+    }
 }
