@@ -13,13 +13,13 @@ $("#exitMenu").click(function(){
 
 var links = {
     main: "Главная",
-    mainHref: "index.html",
+    mainHref: "/",
     mess: "Поболтать",
-    messHref: "message.html",
+    messHref: "chat",
     help: "Помощь",
-    helpHref: "help.html",
+    helpHref: "help",
     profile: "Профиль",
-    profileHref: "profile.html"
+    profileHref: "profile"
 };
 
 var mainLink = document.getElementsByClassName("mainLink");

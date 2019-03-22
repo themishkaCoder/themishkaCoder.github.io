@@ -1,0 +1,8 @@
+.mainBlock{
+    display: grid;
+    grid-template-columns: 220px 1fr;    
+    .description{
+        padding-left: 30px;
+    }
+
+}

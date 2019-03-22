@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1</title>
+</head>
+<body>
+    
+    <p>jQuery</p>
+
+    <div>
+        skyrim
+    </div>
+
+    <span>
+        testing
+    </span>
+
+    <h1 class="firstH">First</h1>
+    <h2 class="secondH">Second</h2>
+
+    <div class="hass">Empty</div>
+
+    <div class="hass"><span>Text</span></div>
+
+    <form action="">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </form>
+
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+
+        <ul>
+            <li>a</li>
+            <li>b</li>
+            <li>c</li>
+            <li>d</li>
+            <li>e</li>
+            <li>f</li>
+        </ul>
+    </ol>
+
+    <button type="button">Button</button>
+
+    <div class="info"></div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+  <script>
+      $("p, div, span").css("color", "red");
+      $(".firstH").css({
+          color: "green",
+          fontSize: "36px"
+      });
+      $(".secondH").css({
+          color: "purple",
+          fontSize: "36px"
+      });
+
+      $(".hass:has(span)").css("border", "2px solid black");
+      
+      $("input[type=text]").val("tratata");
+
+      $("ul").css("color", "red");
+      $("ul li:nth-child(even)").css("text-transform", "uppercase");
+      $("ul li:nth-child(n+4)").css("color", "gray");
+      $(":button").css({
+          padding: "10px 20px",
+          background: "green",
+          fontSize: "24px"
+      });
+
+      var a = "";
+      a += "heigh() - " + $("ol").height() + "<br />";
+      $(".info").html(a);
+  </script>
+</body>
+</html>

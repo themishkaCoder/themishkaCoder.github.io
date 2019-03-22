@@ -1,0 +1,7 @@
+.mainBlock {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 220px 1fr;
+  grid-template-columns: 220px 1fr; }
+  .mainBlock .description {
+    padding-left: 30px; }

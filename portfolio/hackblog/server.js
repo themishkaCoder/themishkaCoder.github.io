@@ -1,4 +1,6 @@
 const express = require("express");
+const mongoose = require("mongoose");
+const keys = require("./keys");
 const app = express();
 const server = require("http").createServer(app);
 
@@ -6,14 +8,31 @@ const io = require("socket.io").listen(server);
 
 
 
-server.listen(3000, "10.0.1.190");
+server.listen(3000, "192.168.88.200");
 
-
+mongoose.connect(keys.mongoURI)
+    .then(() => console.log("MongoDB connected."))
+    .catch(err => console.error(err))
 
 app.use(express.static('public'));
 
 app.get("/", (request, respons) => {
     respons.sendFile(__dirname + "/public/index.html" );
+    // respons.sendFile(__dirname + "/public/css/style.css");
+});
+
+app.get("/chat", (request, respons) => {
+    respons.sendFile(__dirname + "/public/message.html" );
+    // respons.sendFile(__dirname + "/public/css/style.css");
+});
+
+app.get("/help", (request, respons) => {
+    respons.sendFile(__dirname + "/public/help.html" );
+    // respons.sendFile(__dirname + "/public/css/style.css");
+});
+
+app.get("/profile", (request, respons) => {
+    respons.sendFile(__dirname + "/public/profile.html" );
     // respons.sendFile(__dirname + "/public/css/style.css");
 });
 
