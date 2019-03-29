@@ -1,3 +1,6 @@
+a:hover {
+  text-decoration: none; }
+
 .menu {
   background-color: black; }
   .menu button {
@@ -17,14 +20,40 @@
   margin-bottom: 0.1rem; }
 
 #vertText {
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
   writing-mode: vertical-lr;
+  -webkit-transform: scale(-1, -1);
+  -ms-transform: scale(-1, -1);
   transform: scale(-1, -1); }
 
 .works {
   background-color: #f2f2f2; }
   .works .photo {
     width: 100%;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
+    .works .photo:hover .photoLink {
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      top: 45%; }
+    .works .photo:not(:hover) .photoLink {
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      top: 200%; }
+    .works .photo .photoLink {
+      position: absolute;
+      top: -200px;
+      left: 40%;
+      color: white;
+      -webkit-box-shadow: 0 0 125px 140px black;
+      box-shadow: 0 0 125px 140px black;
+      background-color: black; }
+      .works .photo .photoLink a {
+        text-decoration: none;
+        color: white; }
     .works .photo img {
       width: 100%;
       height: 100%; }
@@ -32,6 +61,7 @@
 footer p {
   font-size: 0.8rem;
   color: gray; }
+
 footer i {
   font-size: 2rem;
   color: gray; }
@@ -50,6 +80,8 @@ footer i {
     color: black;
     padding-left: 2rem;
     text-decoration: none; }
+    .menuList a:hover {
+      text-decoration: none; }
     .menuList a h5 {
       margin-bottom: 0;
       padding-bottom: 0;
@@ -72,15 +104,21 @@ footer i {
 .menuListBig a {
   color: black;
   text-decoration: none; }
+  .menuListBig a:hover {
+    text-decoration: none;
+    background-color: black;
+    color: white; }
   .menuListBig a h5 {
     margin-bottom: 0;
     padding-bottom: 0;
     padding-top: 0.5rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 14px;
     font-weight: 400; }
   .menuListBig a p {
-    padding-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     text-transform: uppercase;
     font-size: 12px;
     color: #a9a9a9; }
@@ -105,6 +143,7 @@ footer i {
   left: 0;
   top: 0;
   z-index: 3;
+  -webkit-box-shadow: 94px 0px 235px black;
   box-shadow: 94px 0px 235px black; }
   .filterList a {
     color: #999999;
@@ -121,6 +160,7 @@ footer i {
 
 .closeFilter i {
   color: white; }
+
 .closeFilter button {
   background-color: transparent;
   border: none;
@@ -137,10 +177,12 @@ footer i {
   color: #222222;
   font-size: 1.3rem;
   padding-right: 2rem; }
+
 .contactP p {
   color: #222222;
   font-size: 16px;
   font-weight: 500; }
+
 .contactP .width {
   padding-left: 5rem; }
   .contactP .width p {
