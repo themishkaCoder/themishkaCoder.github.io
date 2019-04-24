@@ -6,10 +6,26 @@
     var inputTask = document.getElementById("inputTask")
     var completeBtns = document.getElementsByClassName("listItem")
 
+    var reverse = document.getElementById("reverse")
+    var noReverse = document.getElementById("noReverse")
+
+    var filterAllButton = document.getElementById("filterAllButton")
+    var filterCompleteButton = document.getElementById("filterCompleteButton")
+    
+    var listItemsHtml = document.getElementsByClassName("listItem")
+
     var listItemsArray = []
 
     addTask.style.backgroundColor = "gray"
     addTask.innerText = "Выключено"
+
+    noReverse.addEventListener("click", function(){
+        list.classList.add("reverse")
+    }, false)
+
+    reverse.addEventListener("click", function(){
+        list.classList.remove("reverse")
+    }, false)
 
     inputTask.addEventListener("input", function(){
         addTask.style.backgroundColor = "green"
@@ -17,7 +33,7 @@
         
     }, false)
 
-    inputTask.addEventListener("change", function(){
+    inputTask.addEventListener("blur", function(){
         if(inputTask.value == 0){
             addTask.style.backgroundColor = "gray"
             addTask.innerText = "Выключено"
@@ -51,17 +67,16 @@
         for (let delBut of delButns){
             delBut.addEventListener("click", function(e){
 
-                listItemA.className = "delListItem"
+                // listItemA.classList.add("delListItem")
+                listItemA.classList.add("delListItem");
                 var delListItem = document.getElementsByClassName("delListItem")[0]
-                
-                //list.removeChild(listItem)
-                setTimeout(function(){
-                    listItemA.className = "listItem"
-                    list.removeChild(listItemA)
-                    listItemsArray.slice(listItemsArray.indexOf(listItemA), 1)
-                    console.log(listItemsArray)
-                }, 480)
-            }, false)
+                listItemsArray.splice(listItemsArray.indexOf(this.listItemA), 1)
+                console.log(listItemsArray)
+                list.removeChild(listItemA)
+                for (let listItemA of listItemsArray){
+                    list.appendChild(listItemA)
+                }
+            }, true)
         }
 
         for (let completeButn of completeBtns){
@@ -69,16 +84,23 @@
                 //e.target.className = "completed"
                 // listItem.className = "completed"
                 console.log(this)
-                this.className = "completed"
+                this.classList.remove("listItem")
+                this.classList.add("completed")
                 
             }, false)
         }
 
     }, false)
 
-    // for (var delBut of delButns){
-    //     delBut.addEventListener("click", function(){
-    //         alert("Work!");
-    //     }, false)
-    // }
+    filterCompleteButton.addEventListener("click", function(){
+        for(let listItemHtml of listItemsHtml){
+            listItemHtml.style.display = "none"
+        }
+    }, false)
+
+    filterAllButton.addEventListener("click", function(){
+        for(let listItemHtml of listItemsHtml){
+            listItemHtml.style.display = "flex"
+        }
+    }, false)
 })();

@@ -10,8 +10,23 @@
 
 .list{
     display: flex;
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap-reverse; */
     flex-direction: column;
+}
+
+.reverse{
+    flex-direction: column-reverse;
+}
+
+.reverseToggle{
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.reverseToggle:active, .reverseToggle:focus  {
+    outline: 0;
+    outline-offset: 0;
 }
 
 #inputTask{
