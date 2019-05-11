@@ -6,6 +6,12 @@
     var inputTask = document.getElementById("inputTask")
     var completeBtns = document.getElementsByClassName("listItem")
 
+    var editInput = document.getElementById("editInput")
+    var editButtons = document.getElementsByClassName("editButtons")
+
+    var searchInput = document.getElementById("searchInput")
+    var searchButton = document.getElementById("searchButton")
+
     var reverse = document.getElementById("reverse")
     var noReverse = document.getElementById("noReverse")
 
@@ -41,8 +47,11 @@
             addTask.style.backgroundColor = "green"
             addTask.innerText = "Добавить задачу"
         }
+
         
     }, false)
+
+
 
     addTask.addEventListener("click", function(){
         var listItem = document.createElement("div")
@@ -53,7 +62,7 @@
         }else{
             // addTask.style.backgroundColor = "green"
             listItem.className = "listItem"
-            listItem.innerHTML = `<p>${inputTask.value}</p> <button class="completeBtns" title="Выполнено">✓</button> <button class="delButns" title="Удалить">✗</button>`
+            listItem.innerHTML = `<p>${inputTask.value}</p> <button class="completeBtns" title="Выполнено">✓</button> <button class="delButns" title="Удалить">✗</button> <button class="editButtons">Edit</button>`
             //list.appendChild(listItem)
             listItemsArray.push(listItem)
             console.log(listItemsArray)
@@ -72,18 +81,49 @@
                 var delListItem = document.getElementsByClassName("delListItem")[0]
                 listItemsArray.splice(listItemsArray.indexOf(this.listItemA), 1)
                 console.log(listItemsArray)
-                list.removeChild(listItemA)
+                delBut.parentElement.remove()
+                // list.removeChild(listItemA)
                 for (let listItemA of listItemsArray){
                     list.appendChild(listItemA)
                 }
             }, true)
         }
 
+        // for (let completeButn of completeBtns){
+        //     completeButn.addEventListener("click", function(){
+        //         //e.target.className = "completed"
+        //         // listItem.className = "completed"
+        //         console.log(this)
+        //         // completeButn.parentElement.classList.remove("listItem")
+        //         // completeButn.parentElement.classList.add("completed")
+        //         this.classList.remove("listItem")
+        //         this.classList.add("completed")
+                
+        //     }, false)
+        // }
+
+        for(let editButton of editButtons){
+        editButton.addEventListener("click", function(){
+            var editArea = document.createElement("div")
+            editArea.className = "editArea"
+            editArea.innerHTML = `
+            <input type='text' id='editInput' placeholder='Поменять текст' value="${inputTask.value}">
+            <button>✓</button>
+            <button>✗</button>
+            `
+            editButton.setAttribute("disabled", "disabled")
+            editButton.parentElement.appendChild(editArea)
+        }, false)
+    }
+
         for (let completeButn of completeBtns){
             completeButn.addEventListener("click", function(){
                 //e.target.className = "completed"
+
                 // listItem.className = "completed"
-                console.log(this)
+                // console.log(completeButn.parentElement)
+                // completeButn.parentElement.classList.remove("listItem")
+                // completeButn.parentElement.classList.add("completed")
                 this.classList.remove("listItem")
                 this.classList.add("completed")
                 
@@ -103,4 +143,23 @@
             listItemHtml.style.display = "flex"
         }
     }, false)
+
+    searchButton.addEventListener("click", function(){
+        // listItemsArray.find(searchInput.value)
+        console.log(searchInput.value)
+        console.log(find(listItemsArray, searchInput.value))
+    }, false)
+
+    // for(let editButton of editButtons){
+    //     editButton.addEventListener("click", function(){
+    //         var editArea = document.createElement("div")
+    //         editArea.innerHTML = `<div class='editArea hide'>
+    //         <input type='text' id='editInput' placeholder='Поменять текст'>
+    //         <button>✓</button>
+    //         <button>✗</button>
+    //         </div>`
+    //         editButton.parentElement.appendChild(editArea)
+    //     }, false)
+    // }
+
 })();
