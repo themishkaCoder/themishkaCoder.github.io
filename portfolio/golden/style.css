@@ -150,7 +150,7 @@ article {
     z-index: 4;
     text-align: center; }
   .time-img img {
-    width: 290px; }
+    width: 175px; }
 
 .team {
   background-color: #f7f7f7;
@@ -181,7 +181,8 @@ article {
     border: 3px solid black;
     margin-right: 0.625rem; }
     .team .social-icon i {
-      color: black; }
+      color: black;
+      font-size: 1.2rem; }
 
 .logos {
   padding-top: 3.75rem;
@@ -229,10 +230,19 @@ article {
     background-color: #fed136; }
 
 .contact-text {
-  padding-bottom: 5rem; }
+  padding-bottom: 2rem; }
   .contact-text h2 {
     color: white; }
   .contact-text p {
+    color: white; }
+
+.contact-links {
+  padding-bottom: 50px;
+  font-size: 1.5rem;
+  color: white; }
+  .contact-links .contact-link i {
+    color: white; }
+  .contact-links .contact-link a {
     color: white; }
 
 footer {

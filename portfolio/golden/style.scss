@@ -190,7 +190,7 @@ article{
     }
 
     img{
-        width: 290px;
+        width: 175px;
     }
 }
 
@@ -238,6 +238,7 @@ article{
         margin-right: 0.625rem; 
         i{
             color: black;
+            font-size: 1.2rem;
         }
     }
 }
@@ -282,12 +283,28 @@ article{
 }
 
 .contact-text{
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     h2{
         color: white;
     }
     p{
         color: white;
+    }
+}
+
+.contact-links{
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+    color: white;
+    .contact-link{
+        i{
+            
+            color: white;
+        }
+        a{
+            color: white;
+            
+        }
     }
 }
 
