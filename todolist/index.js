@@ -13,7 +13,7 @@
     var searchButton = document.getElementById("searchButton")
 
     var reverse = document.getElementById("reverse")
-    var noReverse = document.getElementById("noReverse")
+    // var noReverse = document.getElementById("noReverse")
 
     var filterAllButton = document.getElementById("filterAllButton")
     var filterCompleteButton = document.getElementById("filterCompleteButton")
@@ -22,16 +22,34 @@
 
     var listItemsArray = []
 
+    var editInputs = document.getElementsByClassName("editInputs")
+
     addTask.style.backgroundColor = "gray"
     addTask.innerText = "Выключено"
 
-    noReverse.addEventListener("click", function(){
-        list.classList.add("reverse")
-    }, false)
+
 
     reverse.addEventListener("click", function(){
         list.classList.remove("reverse")
+        reverse.setAttribute("id", "noReverse")
+        reverse.innerText = "▼"
+        var noReverse = document.getElementById("noReverse")
+        noReverse.addEventListener("click", function(){
+            list.classList.add("reverse")
+            noReverse.setAttribute("id", "reverse")
+            noReverse.innerText = "▲"
+            console.log("LOG")
+        }, false)
     }, false)
+
+    
+    // noReverse.addEventListener("click", function(){
+    //     list.classList.add("reverse")
+    //     noReverse.setAttribute("id", "reverse")
+    //     noReverse.innerText = "▲"
+    //     console.log("LOG")
+    // }, false)
+
 
     inputTask.addEventListener("input", function(){
         addTask.style.backgroundColor = "green"
@@ -62,10 +80,15 @@
         }else{
             // addTask.style.backgroundColor = "green"
             listItem.className = "listItem"
-            listItem.innerHTML = `<p>${inputTask.value}</p> <button class="completeBtns" title="Выполнено">✓</button> <button class="delButns" title="Удалить">✗</button> <button class="editButtons">Edit</button>`
+            listItem.innerHTML = `<p>${inputTask.value}</p> <button class="completeBtns" title="Выполнено">✓</button> <button class="delButns" title="Удалить">✗</button> <button class="editButtons">Edit</button> <div class="editArea hide">
+            <input type="text" class="editInputs" placeholder="Поменять текст">
+            <button>✓</button>
+            <button>✗</button>
+        </div>`
             //list.appendChild(listItem)
             listItemsArray.push(listItem)
             console.log(listItemsArray)
+            console.log(listItem.firstChild)
             inputTask.value = ""
             addTask.style.backgroundColor = "gray"
             addTask.innerText = "Выключено"
@@ -105,16 +128,19 @@
         for(let editButton of editButtons){
         editButton.addEventListener("click", function(){
             var editArea = document.createElement("div")
-            editArea.className = "editArea"
-            editArea.innerHTML = `
-            <input type='text' id='editInput' placeholder='Поменять текст' value="${inputTask.value}">
-            <button>✓</button>
-            <button>✗</button>
-            `
-            editButton.setAttribute("disabled", "disabled")
-            editButton.parentElement.appendChild(editArea)
+            // editArea.className = "editArea"
+            // editArea.innerHTML = `
+            // <input type='text' id='editInput' placeholder='Поменять текст' value="${inputTask.value}">
+            // <button>✓</button>
+            // <button>✗</button>
+            // `
+            // editButton.setAttribute("disabled", "disabled")
+            // editButton.parentElement.appendChild(editArea)
         }, false)
     }
+        for(editInput of editInputs){
+            editInput
+        }
 
         for (let completeButn of completeBtns){
             completeButn.addEventListener("click", function(){
@@ -147,7 +173,11 @@
     searchButton.addEventListener("click", function(){
         // listItemsArray.find(searchInput.value)
         console.log(searchInput.value)
-        console.log(find(listItemsArray, searchInput.value))
+        for(let listItem of listItemsArray){
+            console.log(listItem.firstChild)
+            console.log(find(listItem.firstChild.value, searchInput.value))
+        }
+        // console.log(find(listItemsArray, searchInput.value))
     }, false)
 
     // for(let editButton of editButtons){
