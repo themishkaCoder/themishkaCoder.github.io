@@ -175,13 +175,33 @@
 .star{
     width: 17px;
     height: 8px;
-    background-color: #252525;
+    /* background-color: #252525; */
     margin-top: 3px;
     margin-left: 10px;
+
+    background: -webkit-linear-gradient(left, #252525, #33235B, #D62229, #E97639, #792042, #33235B);
+    background: linear-gradient(left, #252525, #33235B, #D62229, #E97639, #792042, #33235B);
+    background-size: 3200px 200px;
+    color: transparent;
+        -webkit-background-clip: content-box;
+        -webkit-animation: animate-logo;
+        -webkit-animation-delay: 0;
+        -webkit-animation-duration: 7s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-fill-mode: forwards;
+    transition: font-size 500ms ease-in-out;
 }
 
+
 .star-empty{
-    background-color: #babab9;
+    width: 17px;
+    height: 8px;
+    /* background-color: #252525; */
+    margin-top: 3px;
+    margin-left: 10px;
+
+    background-color: #babab9 !important;
 }
 
 .work-exp{
@@ -443,6 +463,15 @@
     text-shadow: 0 0.1em 0.1em #111;
   }
 }
+
+@-webkit-keyframes animate-logo {
+    0% {
+    background-position: 0 3200px;
+    }
+    100% {
+    background-position: 3200px 0;
+    }
+   }
 
 
 @media only screen and (min-width: 320px) and (max-width: 1024px) {
