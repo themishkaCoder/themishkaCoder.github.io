@@ -72,39 +72,53 @@
 
 
     addTask.addEventListener("click", function(){
-        var listItem = document.createElement("div")
+        var listItem
+        //  = document.createElement("div")
         if(inputTask.value == ""){
             console.log("error")
             addTask.style.backgroundColor = "gray"
             addTask.innerText = "Выключено"
         }else{
             // addTask.style.backgroundColor = "green"
-            listItem.className = "listItem"
-            listItem.innerHTML = `<p>${inputTask.value}</p> <button class="completeBtns" title="Выполнено">✓</button> <button class="delButns" title="Удалить">✗</button> <button class="editButtons">Edit</button> <div class="editArea hide">
-            <input type="text" class="editInputs" placeholder="Поменять текст">
-            <button>✓</button>
-            <button>✗</button>
-        </div>`
+
+            // listItem.className = "listItem"
+
+        //     listItem.innerHTML = `<p>${inputTask.value}</p> <button class="completeBtns" title="Выполнено">✓</button> <button class="delButns" title="Удалить">✗</button> <button class="editButtons">Edit</button> <div class="editArea hide">
+        //     <input type="text" class="editInputs" placeholder="Поменять текст">
+        //     <button>✓</button>
+        //     <button>✗</button>
+        // </div>`
+            listItem = `${inputTask.value}`
             //list.appendChild(listItem)
+
             listItemsArray.push(listItem)
+            
             console.log(listItemsArray)
-            console.log(listItem.firstChild)
+            // console.log(listItem.firstChild)
             inputTask.value = ""
             addTask.style.backgroundColor = "gray"
             addTask.innerText = "Выключено"
+            list.innerHTML = ""
             for (var listItemA of listItemsArray){
-                list.appendChild(listItemA)
+                var listItemForm = document.createElement("div")
+                listItemForm.className = "listItem"
+                listItemForm.innerHTML = `<p>${listItemA}</p> <div> <button class="completeBtns" title="Выполнено">✓</button> <button class="delButns" title="Удалить">✗</button> </div>`
+                console.log(listItemA)
+                console.log(listItemForm)
+                // listItemForm.remove()
+                // list.removeChild(listItemForm)
+                list.appendChild(listItemForm)
             }
         }
         for (let delBut of delButns){
             delBut.addEventListener("click", function(e){
 
                 // listItemA.classList.add("delListItem")
-                listItemA.classList.add("delListItem");
+                listItemForm.classList.add("delListItem");
                 var delListItem = document.getElementsByClassName("delListItem")[0]
                 listItemsArray.splice(listItemsArray.indexOf(this.listItemA), 1)
                 console.log(listItemsArray)
-                delBut.parentElement.remove()
+                delBut.parentElement.parentElement.remove()
                 // list.removeChild(listItemA)
                 for (let listItemA of listItemsArray){
                     list.appendChild(listItemA)
@@ -172,11 +186,29 @@
 
     searchButton.addEventListener("click", function(){
         // listItemsArray.find(searchInput.value)
-        console.log(searchInput.value)
-        for(let listItem of listItemsArray){
-            console.log(listItem.firstChild)
-            console.log(find(listItem.firstChild.value, searchInput.value))
+
+        var searchIndex = listItemsArray.indexOf(searchInput.value)
+        console.log(searchIndex)
+        listItemsArray[searchIndex] = ">" + listItemsArray[searchIndex]
+        console.log(listItemsArray)
+
+        list.innerHTML = ""
+        for (var listItemA of listItemsArray){
+            var listItemForm = document.createElement("div")
+            listItemForm.className = "listItem"
+            listItemForm.innerHTML = `<p>${listItemA}</p> <div> <button class="completeBtns" title="Выполнено">✓</button> <button class="delButns" title="Удалить">✗</button> </div>`
+            // console.log(listItemA)
+            // console.log(listItemForm)
+            // listItemForm.remove()
+            // list.removeChild(listItemForm)
+            list.appendChild(listItemForm)
         }
+        // console.log(list)
+        // console.log(searchInput.value)
+        // for(let listItem of listItemsArray){
+        //     console.log(listItem)
+        //     console.log(find(listItem, searchInput.value))
+        // }
         // console.log(find(listItemsArray, searchInput.value))
     }, false)
 

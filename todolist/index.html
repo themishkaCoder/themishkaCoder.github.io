@@ -11,30 +11,35 @@
 <body>
     
     <header>
-        <div class="container">
-            <div class="row pt-5">
+        <div class="container bg-black">
+            <div class="row pt-5 d-flex justify-content-center align-items-center flex-column">
 
-                <div class="col-4"></div>
+                <!-- <div class="col-4"></div> -->
 
                 <div class="col-4 d-flex flex-row">
                     <input type="text" placeholder="Напишите задание" id="inputTask">
                     <button id="addTask">Добавить задачу</button>
+
                     
                     
                 </div>
 
-                <div class="col-4"></div>
-                <input type="text" placeholder="search" id="searchInput">
-                <div class="col"><button id="searchButton">Search</button></div>
+                <div class="col-4 d-flex flex-row justify-content-center mt-3">
+                    <input type="text" placeholder="Поиск" id="searchInput" class="inputTask">
+                    <div class="col"><button id="searchButton" class="addTask">Искать</button></div>
+                </div>
+
+                <!-- <input type="text" placeholder="search" id="searchInput">
+                <div class="col"><button id="searchButton">Search</button></div> -->
 
             </div>
         </div>
     </header>
 
     <article>
-        <div class="container">
-            <div class="row pt-5">
-                <div class="col-4"></div>
+        <div class="container bg-black">
+            <div class="row pt-5 d-flex justify-content-center align-items-center flex-column">
+                <!-- <div class="col-4"></div> -->
 
                 <div class="col-4">
                     <h2>Задачи</h2>
@@ -43,8 +48,8 @@
                     <button id="reverse" class="reverseToggle">▲</button>
                     <!-- <button id="noReverse" class="reverseToggle">▼</button> -->
 
-                    <button id="filterAllButton">Все</button>
-                    <button id="filterCompleteButton">Выполненые</button>
+                    <button id="filterAllButton" class="filterButton">Все</button>
+                    <button id="filterCompleteButton" class="filterButton">Выполненые</button>
                     
                     
                     <div class="list">
@@ -65,7 +70,7 @@
                     
                 </div>
 
-                <div class="col-4"></div>
+                <!-- <div class="col-4"></div> -->
 
             </div>
         </div>

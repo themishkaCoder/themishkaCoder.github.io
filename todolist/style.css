@@ -1,14 +1,24 @@
+body{
+    background-color: #3C424A !important;
+}
+
 .listItem{
-    padding-top: 10px;
+    margin-top: 10px;
+    padding: 5px 10px;
     animation-name: fadeIn;
     animation-duration: 0.5s;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: space-between;
     align-items: baseline;
-    width: 210px;
-    
+    width: 100%;
+    background-color: #31363D;
+    border-radius: 2px;
+}
+
+.listItem p{
+    margin-bottom: 8px;
 }
 
 .editArea{
@@ -33,6 +43,7 @@
     border: none;
     background-color: transparent;
     outline: none;
+    color: gray;
 }
 
 .reverseToggle:active, .reverseToggle:focus  {
@@ -44,6 +55,17 @@
     padding: 5px;
     border: none;
     outline: none;
+    background-color: #5A5E64;
+    color: white;
+}
+
+.inputTask{
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: #5A5E64;
+    color: white;
+    /* width: 100%; */
 }
 
 #addTask{
@@ -52,6 +74,15 @@
     color: white;
     border: none;
     border-radius: 2px;
+}
+
+.addTask{
+    padding: 5px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    /* width: 100%; */
 }
 
 .delListItem{
@@ -65,23 +96,28 @@
 
 .completed{
     /* text-decoration: line-through; */
-    padding-top: 10px;
-    color: green;
+    margin-top: 10px;
+    padding: 5px 10px;
+    color: lightgreen;
     display: flex;
     flex-direction: row;
     align-items: baseline;
     flex-wrap: wrap;
-    width: 210px;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #31363D;
+    border-radius: 2px;
 }
 
 .completed p{
     text-decoration: line-through;
+    margin-bottom: 8px;
 }
 
 .completeBtns{
     margin-left: 20px;
     border: none;
-    color: green;
+    color: lightgreen;
     font-weight: bold;
     font-size: 22px;
     background-color: transparent;
@@ -95,6 +131,23 @@
     font-size: 22px;
     background-color: transparent;
 }
+
+.bg-black{
+    background-color: #3C424A;
+    color: white;
+}
+
+.filterButton{
+    padding: 5px 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+/* .container{
+    height: 1000px;
+} */
 
 @keyframes fadeIn{
     from{
