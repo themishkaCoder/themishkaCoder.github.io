@@ -12,211 +12,274 @@
 </head>
 
 <body>
-  <div id="app">
-    <header class="container-fluid">
-      <div class="row navHeader align-items-center">
-
-        <div class="col-12 col-sm flex">
-          <img src="images/logo-orange2.png" class="logo" alt="">
-        </div>
-
-        <div class="col-12 col-sm menu">
-          <a href="" class="d-none d-lg-block menu-a">Главная</a>
-          <a href="" class="d-none d-lg-block menu-a">Блог</a>
-          <div class="phone-numbers">
-            <p>+380 99 54 67 534</p>
-            <p>+380 67 89 57 933</p>
-          </div>
-
-          <button class="menu-bar" v-on:click="showHideMenu">
-            <i class="fas fa-bars"></i>
-          </button>
-
-          <div v-bind:class="adaptiveMenu">
-            <a href="guard.html">Охранная сигнализация</a>
-            <a href="">Пожарная сигнализация</a>
-            <a href="">Видеонаблюдение</a>
-            <a href="">Контроль доступа</a>
-            <a href="">IT-аутсорсинг</a>
-
-          </div>
-        </div>
-
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-4 d-flex social">
+        <button><i class="fab fa-telegram-plane"></i></button>
+        <button><i class="fab fa-instagram"></i></button>
+        <button><i class="fab fa-viber"></i></button>
       </div>
-    </header>
 
-    <article>
-      <div class="main-page-parallax" style="background-image: url('images/parallax.jpg')">
-        <div class="short-review">
-          <h2 class="orange-text">Мы занимаемся… </h2>
-          <p>Описание компании</p>
+      <div class="col-12 col-md d-flex justify-content-center align-items-center contact">
+        <div class="mail d-flex justify-content-center align-items-center">
+          <i class="fas fa-envelope-open"></i>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Accumsan tortor posuere ac
-            ut consequat semper. Dolor morbi non arcu risus.
-            Amet luctus venenatis lectus magna. In fermentum
-            et sollicitudin ac. Lectus arcu bibendum at varius vel
-            pharetra vel. Enim diam vulputate ut pharetra sit
-            amet aliquam id. Pulvinar elementum integer enim
-            neque volutpat ac tincidunt vitae</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Accumsan tortor posuere ac
-            ut consequat semper. Dolor morbi non arcu risus.
-            Amet luctus venenatis lectus magna.</p>
+            Для писем и предложений: <br class="d-block d-md-none">
+            <span>support@megagroup.ru</span>
+          </p>
+        </div>
+        <div class="phone d-flex justify-content-center align-items-center">
+          <i class="fas fa-phone-alt"></i>
+          <p>+7 (000) 000-00-00</p>
         </div>
       </div>
+    </div>
+  </header>
 
-      <div class="container-fluid">
-        <div class="our-pluses">
-          <div class="row justify-content-center align-items-center">
+  <div class="background">
+    <div class="main-nav">
+      <div class="row">
+        <div class="col-12 col-lg-4 logo d-flex justify-content-center">
+          <img src="images/logo-orange2.png" alt="">
+        </div>
+        <div class="col-12 col-lg-8 d-none d-lg-flex menu justify-content-end align-items-center">
+          <a href="">Главная</a>
+          <a href="">О компании</a>
+          <a href="">Услуги</a>
+          <a href="">Наши работы</a>
+          <a href="">Отзывы о нас</a>
+          <a href="">Контакты</a>
 
-            <div class="col-12 col-sm text-plus">
-              <p class="orange-text">Индивидуальный</p>
-              <p>Подход</p>
-            </div>
-            <div class="col-12 col-sm text-plus">
-              <p class="orange-text">Выполнение</p>
-              <p>за 24 часа</p>
-            </div>
-            <div class="col-12 col-sm text-plus">
-              <p class="orange-text">Продажа</p>
-              <p>оборудования</p>
-            </div>
-            <div class="col-12 col-sm text-plus">
-              <p class="orange-text">Гарантия</p>
-              <p>Качества</p>
-            </div>
-            <div class="col-12 col-sm text-plus">
-              <p class="orange-text">Скидка нашим</p>
-              <p>корпоративным клиентам</p>
-            </div>
-
-
-
-          </div>
         </div>
 
-        <div class="services">
-          <h2 class="orange-text">Наши услуги</h2>
-          <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-md-6 col-lg service-img">
-              <img src="images/service1.jpg" alt="">
-              <div class="description">
-                <p>Охранная сигнализация</p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg service-img">
-              <img src="images/service2.jpg" alt="">
-              <div class="description">
-                <p>Пожарная сигнализация</p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg service-img">
-              <img src="images/service3.jpg" alt="">
-              <div class="description">
-                <p>Видеонаблюдение</p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg service-img">
-              <img src="images/service4.jpg" alt="">
-              <div class="description">
-                <p>Контроль доступа</p>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg service-img">
-              <img src="images/service5.jpg" alt="">
-              <div class="description">
-                <p>IT-аутсорсинг</p>
-              </div>
-            </div>
-          </div>
+        <div class="fixed-menu d-block d-lg-none">
+          <button><i class="fas fa-bars"></i></button>
         </div>
-
-        <div class="about-company">
-          <div class="row">
-
-            <div class="col-12 col-md">
-              <div class="about-image" style="background-image: url('images/about.jpg')"></div>
-            </div>
-
-            <div class="col-12 col-md about-text">
-              <h2>Про нашу компанию</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. At consectetur lorem donec massa
-                sapien faucibus et molestie. Facilisi morbi tempus iaculis urna. Etiam erat velit
-                scelerisque in dictum non consectetur a. Id semper risus in hendrerit gravida
-                rutrum. Eu mi bibendum neque egestas. Morbi tincidunt ornare massa eget
-                egestas purus viverra accumsan in. Ultrices sagittis orci a scelerisque.
-
-
-                Suscipit tellus mauris a diam maecenas sed enim. Urna porttitor rhoncus dolor
-                purus non enim praesent elementum. Mi sit amet mauris commodo quis
-                imperdiet massa. Viverra nibh cras pulvinar mattis. Porta lorem mollis aliquam
-                ut porttitor. Ornare suspendisse sed nisi lacus sed. Ultrices neque ornare aenean
-                euismod elementum. Vitae sapien pellentesque habitant morbi tristique senectus.</p>
-              <button v-on:click="moveDown">Контакты</button>
-            </div>
-
-
-          </div>
-        </div>
-
-        <div class="additional-section">
-          <div class="row">
-            <div class="col-12 col-md">
-              <h2>Дополнительная секция</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. At consectetur lorem donec massa
-                sapien faucibus et molestie. Facilisi morbi tempus iaculis urna. Etiam erat velit
-                scelerisque in dictum non consectetur a. Id semper risus in hendrerit gravida
-                rutrum. Eu mi bibendum neque egestas. Morbi tincidunt ornare massa eget
-                egestas purus viverra accumsan in. Ultrices sagittis orci a scelerisque.
-
-
-                Suscipit tellus mauris a diam maecenas sed enim. Urna porttitor rhoncus dolor
-                purus non enim praesent elementum. Mi sit amet mauris commodo quis
-                imperdiet massa. Viverra nibh cras pulvinar mattis. Porta lorem mollis aliquam
-                ut porttitor. Ornare suspendisse sed nisi lacus sed. Ultrices neque ornare aenean
-                euismod elementum. Vitae sapien pellentesque habitant morbi tristique senectus.</p>
-            </div>
-            <div class="col-12 col-md">
-              <div class="additional-image" style="background-image: url('images/additional.jpg')"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="contacts">
-          <h2 class="orange-text">Контакты</h2>
-          <div class="phone-numbers flex justify-content-center align-items-center">
-            <div class="font-icon">
-              <i class="fas fa-phone-alt"></i>
-            </div>
-            <div class="phones">
-              <p>+380 99 54 67 534</p>
-              <p>+380 67 89 57 933</p>
-            </div>
-          </div>
-          <p><i class="fas fa-map-marker-alt"></i> Г. Киев, дом Пушкина, улица Колотушкина </p>
-          <p><i class="fas fa-envelope"></i> info123@gmail.com</p>
-        </div>
-
       </div>
+    </div>
 
-
-    </article>
-
-    <footer class="container-fluid">
-      <img src="images/logo-orange2.png" class="footer-logo" alt="">
-    </footer>
+    <div class="main-page-title">
+      <p class="white-text">Полный комплекс услуг пожарной безопасности</p>
+      <h2><span class="white-text">МОНТАЖ И ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ</span> <span class="orange-text">СИСТЕМ <br>
+          ПОЖАРНОЙ БЕЗОПАСНОСТИ</span> </h2>
+      <button class="white-text">Получить консультацию</button>
+    </div>
   </div>
+
+  <article class="container-fluid">
+    <h2 class="black-text">ПОЖАРНАЯ БЕЗОПАСНОСТЬ ПОД КЛЮЧ</h2>
+    <!-- <p class="gray-text">На все услуги действует гарантия до 5-ти лет!</p> -->
+
+    <div class="row fire-services">
+      <div class="col">
+        <h4>Пожарная сигнализация</h4>
+        <p>Автоматическая<br>пожарная сигнализация</p>
+      </div>
+      <div class="col">
+        <h4>Охранная сигнализация</h4>
+        <p>Система оповещения и управления эвакуацией при пожаре</p>
+      </div>
+      <div class="col">
+        <h4>Видеонаблюдение</h4>
+        <p>Система противодымной вентиляции (дымоудаление и подпор воздуха)</p>
+      </div>
+      <div class="col">
+        <h4>Контроль доступа</h4>
+        <p>Пожаротушение всех видов<br>(водяное, порошковое, газовое)</p>
+      </div>
+    </div>
+
+    <h2 class="black-text">УСЛУГИ В ОБЛАСТИ ПОЖАРНОЙ БЕЗОПАСНОСТИ</h2>
+    <p class="gray-text">Предлагаем Вашему вниманию наши услуги</p>
+    <div class="row services">
+      <div class="col">
+        <div class="image">
+          <img src="images/test.jpg" alt="">
+        </div>
+        <div class="review">
+          <h4>Перекатка пожарных рукавов</h4>
+          <a href="">
+            <button><i class="fas fa-chevron-right"></i></button>
+          </a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="image">
+          <img src="images/2.jpg" alt="">
+        </div>
+        <div class="review">
+          <h4>Проверка пожарных кранов</h4>
+          <a href="">
+            <button><i class="fas fa-chevron-right"></i></button>
+          </a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="image">
+          <img src="images/3.jpg" alt="">
+        </div>
+        <div class="review">
+          <h4>Перезарядка огнетушителей</h4>
+          <a href="">
+            <button><i class="fas fa-chevron-right"></i></button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <h2>ПРАЙС-ЛИСТ НА НАШИ УСЛУГИ</h2>
+    <p class="gray-text">Стоимость работ твердо фиксируется при заключении договора</p>
+    <div class="row justify-content-center price-list">
+      <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
+        <p class="font-weight-bold">Перезарядка огнетушителей</p>
+        <p>от <span class="font-weight-bold">120</span>руб</p>
+      </div>
+      <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
+        <p class="font-weight-bold">Огнезащита деревянных конструкций интерьера</p>
+        <p>от <span class="font-weight-bold">400</span>руб</p>
+      </div>
+
+      <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
+        <p class="font-weight-bold">Огнезащита деревянных конструкций кровли</p>
+        <p>от <span class="font-weight-bold">50</span>руб</p>
+      </div>
+      <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
+        <p class="font-weight-bold">Испытания противопожарных кранов</p>
+        <p>от <span class="font-weight-bold">400</span>руб</p>
+      </div>
+
+      <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
+        <p class="font-weight-bold">Проверка насосов повысителей</p>
+        <p>от <span class="font-weight-bold">3 500</span>руб</p>
+      </div>
+      <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
+        <p class="font-weight-bold">Огнезащита текстильных материалов</p>
+        <p>от <span class="font-weight-bold">50</span>руб</p>
+      </div>
+
+    </div>
+
+    <div class="about-company">
+      <div class="row">
+        <div class="col">
+          <div class="about-text">
+            <p class="gray-text">Немного о компании</p>
+            <h2 class="white-text mb-4">КОМПЛЕКСНАЯ<br>БЕЗОПАСНОСТЬ</h2>
+            <p class="gray-text">Пожарная безопасность — состояние защищённости личности, имущества, общества и
+              государства от пожаров. Обеспечение пожарной безопасности является одной из важнейших функций государства.
+              <br class="mb-3">
+              Элементами системы обеспечения пожарной безопасности (СОПБ) являются органы государственной власти, органы
+              местного самоуправления, организации, крестьянские (фермерские) хозяйства и иные юридические лица
+              независимо от их организационно-правовых форм и форм собственности, граждане, принимающие участие в
+              обеспечении пожарной безопасности в соответствии с законодательством</p>
+            <button>Получить консультацию</button>
+            <div class="about-photo">
+              <img src="images/aboutP.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="our-pluses">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-3 d-flex flex-row justify-content-start align-items-center">
+          <i class="fas fa-clock"></i>
+          <div class="our-pluses-text">
+            <h4 class="font-weight-bold">Срочные проекты</h4>
+            <p>Мы понимаем ваши проблемы и знаем, как их решить</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6  col-lg-4 mb-3 d-flex flex-row justify-content-start align-items-center">
+          <i class="fas fa-cog"></i>
+          <div class="our-pluses-text">
+            <h4 class="font-weight-bold">Без остановки бизнеса</h4>
+            <p>Готовы производить монтаж оборудования в ночное время</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4 mb-3 d-flex flex-row justify-content-start align-items-center">
+          <i class="fas fa-headphones-alt"></i>
+          <div class="our-pluses-text">
+            <h4 class="font-weight-bold">Консультация по всем вопросам</h4>
+            <p>Бесплатно проконсультируем по всем интересующим вопросам</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="certificates">
+
+    </div>
+  </article>
+
+  <footer>
+    <div class="nav-footer d-none d-md-flex flex-row justify-content-center align-items-center">
+      <a href="" class="white-text">Главная</a>
+      <a href="" class="white-text">О компании</a>
+      <a href="" class="white-text">Услуги</a>
+      <a href="" class="white-text">Наши работы</a>
+      <a href="" class="white-text">Отзывы о нас</a>
+      <a href="" class="white-text">Контакты</a>
+    </div>
+
+    <div class="footer-contacts">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg mb-3 d-flex flex-row justify-content-start align-items-center">
+          <i class="fas fa-phone-alt orange-text mr-2"></i>
+          <div class="contact-text">
+            <p class="white-text mb-0">Звоните по номеру:</p>
+            <h6 class="white-text">+7 (000) 000-00-00</h6>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg mb-3 d-flex flex-row justify-content-start align-items-center">
+          <i class="fas fa-envelope-open orange-text mr-2"></i>
+          <div class="contact-text">
+            <p class="white-text mb-0">Электронная почта:</p>
+            <span class="white-text">support@megagroup.ru</span>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg mb-3 d-flex flex-row justify-content-start align-items-center">
+          <i class="far fa-clock orange-text mr-2"></i>
+          <div class="contact-text">
+            <p class="white-text mb-0">Время работы:</p>
+            <p class="gray-text mb-0">09:00 - 21:00 ежедневно</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg mb-3 d-flex flex-row justify-content-start align-items-center">
+          <!-- <i class="fas fa-phone-alt orange-text mr-2"></i> -->
+          <i class="fas fa-map-marker-alt orange-text mr-2"></i>
+          <div class="contact-text">
+            <p class="white-text mb-0">Мы  находимся по адресу:</p>
+            <p class="gray-text mb-0">127051, Россия, Москва, Цветной бульвар, д. 11, стр. 6, офис 406</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="footer-social">
+      <div class="row">
+        <div class="col d-flex justify-content-center align-items-center">
+          <p class="white-text">Copyright © 2019 - 2020 proSecurity</p>
+        </div>
+
+        <div class="col social d-flex justify-content-center align-items-center">
+          <button><i class="fab fa-telegram-plane"></i></button>
+          <button><i class="fab fa-instagram"></i></button>
+          <button><i class="fab fa-viber"></i></button>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- production version, optimized for size and speed -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   <script src="js/app.js"></script>
-
 </body>
 
 </html>
