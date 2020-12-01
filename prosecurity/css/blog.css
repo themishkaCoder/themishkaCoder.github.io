@@ -1,0 +1,1 @@
+.blog-list .post-title{font-size:26px}.blog-list .post-text{font-size:inherit}.blog-list .image{width:100%;height:300px;overflow:hidden}.blog-list .image img{object-fit:cover;width:100%;height:100%}.blog-list .col-12:hover img{transition:.5s;transform:scale(1.5)}.blog-list .col-12:not(hover) img{transition:.5s;transform:scale(1)}/*# sourceMappingURL=blog.css.map */

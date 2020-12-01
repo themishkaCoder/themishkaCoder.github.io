@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="none">
+  <link rel="cannonical">
+  <title>Control</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/about.css">
+
+  <script src="https://kit.fontawesome.com/652b1d332c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-4 d-flex align-items-center social">
+        <button><i class="fab fa-telegram-plane"></i></button>
+        <button><i class="fab fa-instagram"></i></button>
+        <button><i class="fab fa-viber"></i></button>
+      </div>
+
+      <div class="col-12 col-md d-flex justify-content-center align-items-center contact">
+        <div class="mail d-flex justify-content-center align-items-center">
+          <i class="fas fa-envelope-open"></i>
+          <p>
+            Для писем и предложений: <br class="d-block d-md-none">
+            <span>info@prosecurity.kiev.ua</span>
+          </p>
+        </div>
+        <div class="phone d-flex justify-content-center align-items-center">
+          <i class="fas fa-phone-alt"></i>
+          <div class="phone-numbers d-flex flex-column">
+            <p>+38(073)102-23-23</p>
+            <p>+38(068)102-23-23</p>
+            <p>+38(066)102-23-23</p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="small-background">
+    <div class="main-nav" id="app">
+      <div class="row">
+        <div class="col-12 col-lg-4 logo d-flex justify-content-center">
+          <img src="../images/logo-orange2.png" alt="">
+        </div>
+        <div class="col-12 col-lg-8 d-none d-lg-flex menu justify-content-end align-items-center">
+          <a href="../index.html" class="white-text">Главная</a>
+          <a href="../about.html" class="white-text">О компании</a>
+          <!-- <a href="">Услуги</a> -->
+          <div class="dropdown">
+            <a class="btn dropdown-toggle text-decoration-none white-text" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Услуги
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="fire.html">Пожарная сигнализация</a>
+              <a class="dropdown-item" href="guard.html">Охранная сигнализация</a>
+              <a class="dropdown-item" href="video.html">Видеонаблюдение</a>
+              <a class="dropdown-item" href="control.html">Контроль доступа</a>
+            </div>
+          </div>
+          <a href="../portfolio.html" class="white-text">Наши работы</a>
+          <a href="../blog.html" class="white-text">Блог</a>
+          <a href="../contact.html" class="white-text">Контакты</a>
+
+        </div>
+
+        <div class="fixed-menu d-block d-lg-none">
+          <button v-on:click="showHideMenu"><i class="fas fa-bars"></i></button>
+        </div>
+        <div v-bind:class="adaptiveMenu">
+          <button v-on:click="hideMenu" class="close-button"><i class="fas fa-times"></i></button>
+          <div class="row">
+            <div class="col-12 mb-3">
+              <a href="../index.html" class="pl-4 text-decoration-none black-text">Главная</a>
+            </div>
+
+            <div class="col-12 mb-3">
+              <a href="../about.html" class="pl-4 text-decoration-none black-text">О компании</a>
+            </div>
+
+            <div class="col-12 mb-3">
+              <!-- <a href="" class="pl-4 text-decoration-none black-text">Услуги</a> -->
+              <div class="dropdown">
+                <a class="btn dropdown-toggle pl-4 text-decoration-none black-text" href="#" role="button"
+                  id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Услуги
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="fire.html">Пожарная сигнализация</a>
+                  <a class="dropdown-item" href="guard.html">Охранная сигнализация</a>
+                  <a class="dropdown-item" href="video.html">Видеонаблюдение</a>
+                  <a class="dropdown-item" href="control.html">Контроль доступа</a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-12 mb-3">
+              <a href="../blog.html" class="pl-4 text-decoration-none black-text">Блог</a>
+            </div>
+
+            <div class="col-12 mb-3">
+              <a href="../contact.html" class="pl-4 text-decoration-none black-text">Контакты</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <article>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Контроль доступа</li>
+      </ol>
+    </nav>
+    <h1 class="ml-2">Контроль доступа</h1>
+    <div class="row">
+      <div class="col-12 col-md d-flex justify-content-center">
+        <div class="about-image">
+          <img src="../images/services/control.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="col-12 col-md">
+        <p class="p-2">
+          Компания «Мегагруп» приветствует Вас на сайте Вашей компании!
+          Мы рады, что Вы сделали правильный выбор, ведь, создав сайт, Ваша компания приобрела свое лицо в безграничном
+          пространстве Интернет!
+          Надеемся, что благодаря этому сайту Ваши потенциальные клиенты будут легко находить Вас в сети Интернет, и
+          сайт в скором времени начнет приносить прибыль.
+          <br>
+          Ваш сайт имеет систему управления (CMS-S3 MegaSite), которая позволяет легко управлять содержанием сайта без
+          наличия навыков программирования благодаря удобному пользовательскому интерфейсу.
+          <br>
+          Возможности сайта:
+        </p>
+      </div>
+
+      <div class="col-12">
+        <p class="p-2">1. Размещение текстовых страниц различных уровней вложенности<br><br>
+
+          Если Вы хотите, чтобы Ваш сайт не просто занимал свою нишу в сети Интернет, но и хорошо воспринимался
+          поисковыми системами, Вы можете прочитать рекомендации, которые дает Яндекс - «Чем отличается качественный
+          сайт от некачественного с точки зрения Яндекса» .
+
+          Обращаем Ваше внимание, что текстовая информация на сайте должна быть индивидуальной, не скопированной с
+          других Интернет-ресурсов, о чем указано в рекомендациях Яндекса:
+
+          «Мы стараемся не индексировать или не ранжировать высоко сайты, копирующие информацию с других ресурсов и не
+          создающие оригинального контента или сервиса».
+          <br><br>2. Размещение изображений (отдельные фотографии и фотогалерея)<br><br>
+
+          На сайте Вы можете размещать фотографии как на текстовых страницах, так и создавать фотогалереи. Наша система
+          управления позволяет автоматически уменьшать фотографии, и все же мы рекомендуем при работе с изображениями в
+          графических редакторах пользоваться функцией «Сохранить для Web». Она позволяет значительно сжимать размеры
+          изображений. Благодаря этому быстрее загружается сайт и меньше расходуется трафик, что актуально для
+          пользователей, которые не имеют доступа к безлимитному Интернету.
+          <br><br>3. Возможность создания таблиц в системе управления или их импорт из Excel.<br><br>
+
+          При импорте таблиц из Excel рекомендуется обращать внимание на их ширину и размеры. Если таблица сложная, она
+          возможно будет плохо загружаться у посетителей сайта из за различных размеров мониторов и браузеров.</p>
+        <p class="font-weight-bold p-2">Цена 2300грн</p>
+      </div>
+    </div>
+  </article>
+
+
+  <footer>
+    <div class="nav-footer d-none d-md-flex flex-row justify-content-center align-items-center">
+      <a href="" class="white-text">Главная</a>
+      <a href="" class="white-text">О компании</a>
+      <a href="" class="white-text">Услуги</a>
+      <a href="" class="white-text">Наши работы</a>
+      <a href="" class="white-text">Блог</a>
+      <a href="" class="white-text">Контакты</a>
+    </div>
+
+    <div class="footer-contacts">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg mb-3 d-flex flex-row justify-content-start align-items-center">
+          <i class="fas fa-phone-alt orange-text mr-2"></i>
+          <div class="contact-text">
+            <p class="white-text mb-0">Звоните по номеру:</p>
+            <h6 class="white-text">+7 (000) 000-00-00</h6>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg mb-3 d-flex flex-row justify-content-start align-items-center">
+          <i class="fas fa-envelope-open orange-text mr-2"></i>
+          <div class="contact-text">
+            <p class="white-text mb-0">Электронная почта:</p>
+            <span class="white-text">info@prosecurity.kiev.ua</span>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg mb-3 d-flex flex-row justify-content-start align-items-center">
+          <i class="far fa-clock orange-text mr-2"></i>
+          <div class="contact-text">
+            <p class="white-text mb-0">Время работы:</p>
+            <p class="gray-text mb-0">09:00 - 21:00 ежедневно</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg mb-3 d-flex flex-row justify-content-start align-items-center">
+          <!-- <i class="fas fa-phone-alt orange-text mr-2"></i> -->
+          <i class="fas fa-map-marker-alt orange-text mr-2"></i>
+          <div class="contact-text">
+            <p class="white-text mb-0">Мы находимся по адресу:</p>
+            <p class="gray-text mb-0">127051, Россия, Москва, Цветной бульвар, д. 11, стр. 6, офис 406</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="footer-social">
+      <div class="row">
+        <div class="col d-flex justify-content-center align-items-center">
+          <p class="white-text">Copyright © 2019 - 2020 proSecurity</p>
+        </div>
+
+        <div class="col social d-flex justify-content-center align-items-center">
+          <button><i class="fab fa-telegram-plane"></i></button>
+          <button><i class="fab fa-instagram"></i></button>
+          <button><i class="fab fa-viber"></i></button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src="../js/app.js"></script>
+</body>
+
+</html>
