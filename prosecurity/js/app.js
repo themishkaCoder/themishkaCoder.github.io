@@ -12,5 +12,9 @@ var app = new Vue({
       hideMenu: function () {
         this.activeMenu == true ? (this.adaptiveMenu = "mobile-menu mobile-menu-hide", this.activeMenu = false) : (this.adaptiveMenu = "mobile-menu mobile-menu-show", this.activeMenu = true)
       }
+    },
+    created(){
+      const currentURL = () => window.location.pathname;
+      console.log(currentURL())
     }
   })
