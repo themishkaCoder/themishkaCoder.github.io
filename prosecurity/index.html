@@ -18,9 +18,9 @@
   <header class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-4 d-flex align-items-center social">
-        <button><i class="fab fa-telegram-plane"></i></button>
-        <button><i class="fab fa-instagram"></i></button>
-        <button><i class="fab fa-viber"></i></button>
+        <a href="" role="button" class="d-flex justify-content-center align-items-center"><i class="fab fa-telegram-plane"></i></a>
+        <a href="" role="button" class="d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></a>
+        <a href="" role="button" class="d-flex justify-content-center align-items-center"><i class="fab fa-viber"></i></a>
       </div>
 
       <div class="col-12 col-md d-flex justify-content-center align-items-center contact">
@@ -28,15 +28,24 @@
           <i class="fas fa-envelope-open"></i>
           <p>
             Для писем и предложений: <br class="d-block d-md-none">
-            <span>info@prosecurity.kiev.ua</span>
+            <a href="mailto:info@prosecurity.kiev.ua" class=""><span>info@prosecurity.kiev.ua</span></a>
           </p>
         </div>
         <div class="phone ml-0 ml-lg-3 d-flex justify-content-center align-items-center">
           <i class="fas fa-phone-alt"></i>
           <div class="phone-numbers d-flex flex-column">
-            <p>+38(073)102-23-23</p>
-            <p>+38(068)102-23-23</p>
-            <p>+38(066)102-23-23</p>
+            <a href="tel:+380731022323" class="text-decoration-none">
+              <p>+38(073)102-23-23</p>
+            </a>
+            <a href="tel:+380681022323" class="text-decoration-none">
+              <p>+38(068)102-23-23</p>
+            </a>
+            <a href="tel:+380661022323" class="text-decoration-none">
+              <p>+38(066)102-23-23</p>
+            </a>
+            <!-- <p>+38(073)102-23-23</p> -->
+            
+            
           </div>
 
 
@@ -48,7 +57,7 @@
   <div class="background">
     <div class="main-nav container-fluid" id="app">
       <div class="row">
-        <div class="col-12 col-lg-4 logo d-flex justify-content-center">
+        <div class="col-12 col-lg-4 logo d-flex justify-content-start">
           <img src="images/logo-orange2.png" alt="">
         </div>
         <div class="col-12 col-lg-8 d-none d-lg-flex menu justify-content-end align-items-center">
@@ -128,22 +137,46 @@
     <h2 class="black-text text-center">Наши услуги</h2>
 
     <div class="row fire-services">
-      <div class="col-12 col-lg-3 mb-3">
-        <h4>Пожарная сигнализация</h4>
-        <p>Автоматическая<br>пожарная сигнализация</p>
+      <div class="col-12 col-lg-3 mb-3 pb-2 d-flex justify-content-end align-items-center flex-row-reverse flex-lg-column">
+        <div class="fire-service-text text-start text-lg-center">
+          <h4>Пожарная сигнализация</h4>
+          <p class="mb-0 mb-lg-2">Автоматическая<br>пожарная сигнализация</p>
+        </div>
+        <div class="fire-service-icon mr-3 mr-lg-0">
+          <img src="images/fireCutted.png" class="icon" alt="">
+        </div>
       </div>
-      <div class="col-12 col-lg-3 mb-3">
-        <h4>Охранная сигнализация</h4>
-        <p>Система оповещения и управления эвакуацией при пожаре</p>
+
+      <div class="col-12 col-lg-3 mb-3 pb-2 d-flex justify-content-end align-items-center flex-row-reverse flex-lg-column">
+        <div class="fire-service-text text-start text-lg-center">
+          <h4>Охранная сигнализация</h4>
+          <p class="mb-0 mb-lg-2">Система оповещения и управления эвакуацией при пожаре</p>
+        </div>
+        <div class="fire-service-icon mr-3 mr-lg-0">
+          <img src="images/alarmCutted.png" class="icon" alt="">
+        </div>
       </div>
-      <div class="col-12 col-lg-3 mb-3">
-        <h4>Видеонаблюдение</h4>
-        <p>Система противодымной вентиляции (дымоудаление и подпор воздуха)</p>
+
+      <div class="col-12 col-lg-3 mb-3 pb-2 d-flex justify-content-end align-items-center flex-row-reverse flex-lg-column">
+        <div class="fire-service-text text-start text-lg-center">
+          <h4>Видеонаблюдение</h4>
+          <p class="mb-0 mb-lg-2">Система противодымной вентиляции (дымоудаление и подпор воздуха)</p>
+        </div>
+        <div class="fire-service-icon mr-3 mr-lg-0">
+          <img src="images/cameraCutted.png" class="icon" alt="">
+        </div>
       </div>
-      <div class="col-12 col-lg-3 mb-3">
-        <h4>Контроль доступа</h4>
-        <p>Пожаротушение всех видов<br>(водяное, порошковое, газовое)</p>
+
+      <div class="col-12 col-lg-3 mb-3 pb-2 d-flex justify-content-end align-items-center flex-row-reverse flex-lg-column">
+        <div class="fire-service-text text-start text-lg-center">
+          <h4>Контроль доступа</h4>
+          <p class="mb-0 mb-lg-2">Пожаротушение всех видов<br>(водяное, порошковое, газовое)</p>
+        </div>
+        <div class="fire-service-icon mr-3 mr-lg-0">
+          <img src="images/accessCutted.png" class="icon" alt="">
+        </div>
       </div>
+
     </div>
 
     <!-- <h2 class="black-text text-center">УСЛУГИ В ОБЛАСТИ ПОЖАРНОЙ БЕЗОПАСНОСТИ</h2>
@@ -248,7 +281,7 @@
       </div>
     </div>
 
-    <div class="our-pluses">
+    <div class="our-pluses mb-5">
       <div class="row">
         <div class="col-12 col-md-6 col-lg-4 mb-3 d-flex flex-row justify-content-start align-items-center">
           <i class="fas fa-clock"></i>
@@ -276,28 +309,40 @@
       </div>
     </div>
 
-    <div class="certificates mb-5">
-      <h2 class="text-center mb-3">Нам доверяют</h2>
+    <div class="certificates mb-5 pt-3">
+      <h2 class="text-center mb-0 pt-4 h1 font-weight-bold">Нам доверяют</h2>
       <div class="row">
         <div class="col">
           <div class="certificates-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": "true", "groupCells": "true" }'>
             <div class="carousel-cell">
+              <img src="images/сlients/vasu.png" alt="">
+            </div>
+            <div class="carousel-cell">
+              <img src="images/сlients/lada-logotop.jpg" alt="">
+            </div>
+            <div class="carousel-cell">
+              <img src="images/сlients/globus2.png" alt="">
+            </div>
+            <div class="carousel-cell">
               <img src="images/сlients/privat.png" alt="">
             </div>
             <div class="carousel-cell">
-              <img src="images/сlients/globus.png" alt="">
+              <img src="images/сlients/takeoff.png" alt="">
             </div>
             <div class="carousel-cell">
               <img src="images/сlients/air.png" alt="">
             </div>
             <div class="carousel-cell">
-              <img src="images/сlients/lada.png" alt="">
+              <img src="images/сlients/eat2.png" alt="">
             </div>
             <div class="carousel-cell">
-              <h2>Флекс Пак, ТОВ</h2>
+              <img src="images/сlients/vals.png" alt="">
             </div>
             <div class="carousel-cell">
-              <img src="images/сlients/easygo2.png" alt="">
+              <h5>ТОВ “ФЛЕКС-ПАК”</h5>
+            </div>
+            <div class="carousel-cell">
+              <img src="images/сlients/elkannnpapapa-2.png" alt="">
             </div>
           </div>
         </div>
@@ -363,9 +408,9 @@
         </div>
 
         <div class="col social d-flex justify-content-center align-items-center">
-          <button><i class="fab fa-telegram-plane"></i></button>
-          <button><i class="fab fa-instagram"></i></button>
-          <button><i class="fab fa-viber"></i></button>
+          <a href="" role="button" class="d-flex justify-content-center align-items-center"><i class="fab fa-telegram-plane"></i></a>
+          <a href="" role="button" class="d-flex justify-content-center align-items-center"><i class="fab fa-instagram"></i></a>
+          <a href="" role="button" class="d-flex justify-content-center align-items-center"><i class="fab fa-viber"></i></a>
         </div>
       </div>
     </div>
