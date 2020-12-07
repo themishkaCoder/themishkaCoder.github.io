@@ -131,13 +131,51 @@
       
       <a href="contact.html" role="button" class="white-text orange-button">Получить консультацию</a>
     </div>
+
+    <div class="services-mobile row d-flex d-sm-none">
+      <div onclick="window.location = 'services/fire.html'" class="col-12 mb-4 d-flex justify-content-around align-items-center">
+        <div class="icon mr-3">
+          <img src="images/port1.jpg" alt="">
+        </div>
+        <div class="text-section">
+          <p class="mb-0 font-weight-bold">Пожарная сигнализация</p>
+        </div>
+      </div>
+
+      <div onclick="window.location = 'services/guard.html'" class="col-12 mb-4 d-flex justify-content-around align-items-center">
+        <div class="icon mr-3">
+          <img src="images/port2.jpg" alt="">
+        </div>
+        <div class="text-section">
+          <p class="mb-0 font-weight-bold">Охранная сигнализация</p>
+        </div>
+      </div>
+
+      <div onclick="window.location = 'services/control.html'" class="col-12 mb-4 d-flex justify-content-around align-items-center">
+        <div class="icon mr-3">
+          <img src="images/port3.jpg" alt="">
+        </div>
+        <div class="text-section">
+          <p class="mb-0 font-weight-bold">Контроль доступа</p>
+        </div>
+      </div>
+
+      <div onclick="window.location = 'services/video.html'" class="col-12 mb-4 d-flex justify-content-around align-items-center">
+        <div class="icon mr-3">
+          <img src="images/3.jpg" alt="">
+        </div>
+        <div class="text-section">
+          <p class="mb-0 font-weight-bold">Система видеонаблюдения</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <article class="container-fluid">
-    <h2 class="black-text text-center">Наши услуги</h2>
+    <h2 class="black-text font-weight-bold text-center d-none d-sm-block">НАШИ УСЛУГИ</h2>
 
-    <div class="row fire-services">
-      <div class="col-12 col-lg-3 mb-3 pb-2 d-flex justify-content-end align-items-center flex-row-reverse flex-lg-column">
+    <div class="row fire-services d-none d-sm-flex">
+      <div onclick="window.location = 'services/fire.html'" class="col-12 col-lg-3 mb-3 pb-2 d-flex justify-content-end align-items-center flex-row-reverse flex-lg-column">
         <div class="fire-service-text text-start text-lg-center">
           <h4>Пожарная сигнализация</h4>
           <p class="mb-0 mb-lg-2">Автоматическая<br>пожарная сигнализация</p>
@@ -147,17 +185,17 @@
         </div>
       </div>
 
-      <div class="col-12 col-lg-3 mb-3 pb-2 d-flex justify-content-end align-items-center flex-row-reverse flex-lg-column">
+      <div onclick="window.location = 'services/guard.html'" class="col-12 col-lg-3 mb-3 pb-2 d-flex justify-content-end align-items-center flex-row-reverse flex-lg-column">
         <div class="fire-service-text text-start text-lg-center">
           <h4>Охранная сигнализация</h4>
-          <p class="mb-0 mb-lg-2">Система оповещения и управления эвакуацией при пожаре</p>
+          <p class="mb-0 mb-lg-2">Система оповещения и управления <br> эвакуацией при пожаре</p>
         </div>
         <div class="fire-service-icon mr-3 mr-lg-0">
           <img src="images/alarmCutted.png" class="icon" alt="">
         </div>
       </div>
 
-      <div class="col-12 col-lg-3 mb-3 pb-2 d-flex justify-content-end align-items-center flex-row-reverse flex-lg-column">
+      <div onclick="window.location = 'services/video.html'" class="col-12 col-lg-3 mb-3 pb-2 d-flex justify-content-end align-items-center flex-row-reverse flex-lg-column">
         <div class="fire-service-text text-start text-lg-center">
           <h4>Видеонаблюдение</h4>
           <p class="mb-0 mb-lg-2">Система противодымной вентиляции (дымоудаление и подпор воздуха)</p>
@@ -167,7 +205,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-lg-3 mb-3 pb-2 d-flex justify-content-end align-items-center flex-row-reverse flex-lg-column">
+      <div onclick="window.location = 'services/control.html'" class="col-12 col-lg-3 mb-3 pb-2 d-flex justify-content-end align-items-center flex-row-reverse flex-lg-column">
         <div class="fire-service-text text-start text-lg-center">
           <h4>Контроль доступа</h4>
           <p class="mb-0 mb-lg-2">Пожаротушение всех видов<br>(водяное, порошковое, газовое)</p>
@@ -217,35 +255,53 @@
       </div>
     </div> -->
 
-    <h2 class="text-center">ПРАЙС-ЛИСТ НА НАШИ УСЛУГИ</h2>
+    <h2 class="text-center font-weight-bold ">Системы безопасности от ProSecurity это:</h2>
     <p class="gray-text text-center">Стоимость работ твердо фиксируется при заключении договора</p>
     <div class="row justify-content-center price-list">
       <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
-        <p class="font-weight-bold">Перезарядка огнетушителей</p>
-        <p><span class="font-weight-bold">120</span>руб</p>
+        <p class="font-weight-bold">Монтаж</p>
+        <!-- <a href="contact.html" class="font-weight-bold orange-text text-decoration-none">Заказать</a> -->
+        <!-- <p><span class="font-weight-bold">120</span>руб</p> -->
       </div>
       <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
-        <p class="font-weight-bold">Огнезащита деревянных конструкций интерьера</p>
-        <p><span class="font-weight-bold">400</span>руб</p>
-      </div>
-
-      <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
-        <p class="font-weight-bold">Огнезащита деревянных конструкций кровли</p>
-        <p><span class="font-weight-bold">500</span>руб</p>
-      </div>
-      <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
-        <p class="font-weight-bold">Испытания противопожарных кранов</p>
-        <p><span class="font-weight-bold">400</span>руб</p>
+        <p class="font-weight-bold">Аудит</p>
+        <!-- <a href="contact.html" class="font-weight-bold orange-text text-decoration-none">Заказать</a> -->
+        <!-- <p><span class="font-weight-bold">400</span>руб</p> -->
       </div>
 
       <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
-        <p class="font-weight-bold">Проверка насосов повысителей</p>
-        <p><span class="font-weight-bold">3 500</span>руб</p>
+        <p class="font-weight-bold">Обслуживание</p>
+        <!-- <a href="contact.html" class="font-weight-bold orange-text text-decoration-none">Заказать</a> -->
+        <!-- <p><span class="font-weight-bold">500</span>руб</p> -->
+      </div>
+      <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
+        <p class="font-weight-bold">Проектирование</p>
+        <!-- <a href="contact.html" class="font-weight-bold orange-text text-decoration-none">Заказать</a> -->
+        <!-- <p><span class="font-weight-bold">400</span>руб</p> -->
       </div>
 
       <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
-        <p class="font-weight-bold">Огнезащита текстильных материалов</p>
-        <p><span class="font-weight-bold">50</span>руб</p>
+        <p class="font-weight-bold">Запуск и настройка</p>
+        <!-- <a href="contact.html" class="font-weight-bold orange-text text-decoration-none">Заказать</a> -->
+        <!-- <p><span class="font-weight-bold">3 500</span>руб</p> -->
+      </div>
+
+      <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
+        <p class="font-weight-bold">Подбор оборудования</p>
+        <!-- <a href="contact.html" class="font-weight-bold orange-text text-decoration-none">Заказать</a> -->
+        <!-- <p><span class="font-weight-bold">50</span>руб</p> -->
+      </div>
+
+      <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
+        <p class="font-weight-bold">Техподдержка</p>
+        <!-- <a href="contact.html" class="font-weight-bold orange-text text-decoration-none">Заказать</a> -->
+        <!-- <p><span class="font-weight-bold">3 500</span>руб</p> -->
+      </div>
+
+      <div class="col-12 col-lg-6 mb-2 price-item d-flex flex-row justify-content-between">
+        <p class="font-weight-bold">Продажа оборудования</p>
+        <!-- <a href="contact.html" class="font-weight-bold orange-text text-decoration-none">Заказать</a> -->
+        <!-- <p><span class="font-weight-bold">50</span>руб</p> -->
       </div>
 
       <div class="col-12 d-flex justify-content-end align-items-center">
@@ -310,7 +366,7 @@
     </div>
 
     <div class="certificates mb-5 pt-3">
-      <h2 class="text-center mb-0 pt-4 h1 font-weight-bold">Нам доверяют</h2>
+      <h2 class="text-center mb-0 pt-4 h1 font-weight-bold">НАМ ДОВЕРЯЮТ</h2>
       <div class="row">
         <div class="col">
           <div class="certificates-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": "true", "groupCells": "true" }'>
